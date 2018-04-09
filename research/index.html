@@ -123,7 +123,7 @@
 <h3 id="tracking-pedestrians">Tracking Pedestrians</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="http://localhost:4000/images/luber2010people.jpg" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/luber2010people.jpg" alt="Visualization of people tracking." /></p>
 </div>
 
 <p>For a robot that has to move and navigate in a human-populated environment and interact with humans, it is important to perceive and follow the motions of walking and standing humans. Humans as social beings use spaces according to an underlying social protocol which imposes structure to their motions. In my research, I incorporated a model of a social protocol called <em>Social Forces</em> into a tracking algorithm to better predict future states and improve tracking performance.</p>
@@ -133,7 +133,7 @@
 <h3 id="socially-normative-navigation">Socially Normative Navigation</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="http://localhost:4000/images/irl.png" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/irl.png" alt="Visualization of people tracking." /></p>
 </div>
 
 <p>A robot that operates in a human-populated environment best behaves in an expectable and familiar way when navigating. In my research, I therefore used learning from demonstration to imitate human navigation behavior in encounter and crowd situations. The method learns a distribution over behaviors and at the same time provides a cost function for motion planning.</p>
@@ -142,7 +142,7 @@
 <h3 id="audio-based-activity-recognition">Audio-based Activity Recognition</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="http://localhost:4000/images/stork2011audio.jpg" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/stork2011audio.jpg" alt="Visualization of people tracking." /></p>
 </div>
 
 <p>Activites of humans create characteristic sounds, however there are often no strict temporal boundaries between activities and many other sources of sound in a populated environment. In my research, I used a non-parametric, non-Markovian approach with a committee of experts for recoginizing activities.</p>
@@ -162,13 +162,13 @@
 <h3 id="fingertip-graps">Fingertip Graps</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="http://localhost:4000/images/hang2014combinatorial.jpg" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/hang2014combinatorial.jpg" alt="Visualization of people tracking." /></p>
 </div>
 
 <p>Often, we only hold objects with our fingertips. This is a type of grasp that allows us to manipulate the object and is often associated with precision in interaction. For desiging a fingertip grasp, we have to analyze the object’s shape and understand the hand’s abilities since a grasp can only exist where the geometry of object and hand meet. What is challenging in fingertip grasp design is the large and complex search space of grasps on an object and the complex relationship to the hand’s kinematic. Additonally, grasp objectives such as mechanical stability are difficult to decompose into decoupled problems and therefore make it difficult to operate on partial solutions as is often the case in optimization.</p>
 
 <div class="pull-right" style="width: 200px; margin-right: 20px;">
-  <p><img src="http://localhost:4000/images/hang2017framework.png" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/hang2017framework.png" alt="Visualization of people tracking." /></p>
 </div>
 
 <p>In our research, we turn to abstraction and optimization to design fingertip grasps and iteratively improve solutions on more exact representations of the same problem. For this, we introduced the object’s fingertip space hierarchy  which describes all positions where a fingertip can be placed and their similarity in several levels of abstraction. We also reduced optimal fingertip grasping to path-finding which allows for efficient and heuristic algorithms for optimal grasping.</p>
@@ -178,7 +178,7 @@
 <h3 id="catenane-caging">Catenane Caging</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="http://localhost:4000/images/caging.png" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/caging.png" alt="Visualization of people tracking." /></p>
 </div>
 
 <p>Another way to move or manipulate an object is caging. A caged object is not ridgitly fixated but instead merely constraint in its motion such that it cannot escape. This has the advantage that the interaction between object and manipulator is felxible and that the object’s small-scale geometry is less relevant to caging compared to grasp design. However, caging is difficult because of its general and essentially geometric nature. Reasoning about the spacial relationship of two bodies in geometric terms is computationally hard. In my research, I therefore used topoligical representation of object and hand allowing direct analysis of the caging property. The representation is based on holes and allows to model a type of caging as inter-linking object and hand like links of a chain.</p>
@@ -188,7 +188,7 @@
 <h2 id="predictive-state-representations-in-robotics">Predictive State Representations in Robotics</h2>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="http://localhost:4000/images/stork2015semantically.jpg" alt="" /></p>
+  <p><img src="/images/stork2015semantically.jpg" alt="" /></p>
 </div>
 
 <p>For an intelligent agent to be autonomous, it needs the capacity to adapt to its environment by learning the environemnt’s properties. This entails understanding the consequences of its actions in the environment. In realistic settings, the environment’s state cannot be directly observed, it is latent, transitions are stochastic, and observations are perturbed by other signals and imperfect sensors. Predictive State Representations (PSRs) are a class of models that were designed to learn representations of such environments. They do not depend on a nominal state space and assign no semantics to the learned state vector. However, learning them in realistic scenarios is hard and guarantees only hold under ideal conditions for discrete systems.</p>
@@ -198,7 +198,7 @@
 <h3 id="in-hand-manpulation-and-external-dextarity">In-Hand Manpulation and External Dextarity</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="http://localhost:4000/images/stork2015learning-A.jpg" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/stork2015learning-A.jpg" alt="Visualization of people tracking." /></p>
 </div>
 
 <p>In-hand manipulation is an important ability for humans. Almost all objects we pick up we later re-orient and re-position to use them, e.g. a pencil. At the same time, we often use external ressources when interacting with objects we hold in our hands. One example is pushing an object against a contact in the environment. To a simple manipulator this provides a range interactions that otherwise would only be accessible to a hand with many fingers and joints, called external dexterity.</p>
