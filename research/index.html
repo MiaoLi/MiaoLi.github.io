@@ -148,26 +148,10 @@ are sampled in simulation and encoded as a probabilistic model, which encapsulat
 learned model, suitable grasps can be generated on-line given the task-specific contact. Moreover, a grasp adaptation strategy is proposed to locally adjust the specified contact in order to increase the grasp feasibility and also the quality of the final found grasp. We demonstrate the effectiveness of our approach
 using a 16 DOF robotic hand – Allegro Hand, on a variety of tool-using tasks</p>
 
-<p><br /></p>
-<h3 id="audio-based-activity-recognition">Audio-based Activity Recognition</h3>
-
-<div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="/images/stork2011audio.jpg" alt="Visualization of people tracking." /></p>
-</div>
-
-<p>Activites of humans create characteristic sounds, however there are often no strict temporal boundaries between activities and many other sources of sound in a populated environment. In my research, I used a non-parametric, non-Markovian approach with a committee of experts for recoginizing activities.</p>
-
-<p>This research also resulted in a benchmark dataset.</p>
-
-<p><br /></p>
-
-<h3 id="scene-understanding">Scene Understanding</h3>
-
-<p>Our environments a not only built for humans, they are also structured by us. This means that we arrange objects in our spaces according to our needs and habbits. From the perspective of an artificial agent that has to understand our environment, to e.g. find and object, this provides additional structure. However, perception in cluttered environments such as a kitchen or an office is difficult. In our research, we therefore assumed that only rough geometric information, such as position and general size, of objects are available. The method therefore reasons based on the spacial relationships between the objects about their class.</p>
-
 <h2 id="grasp-adaptation">Grasp Adaptation</h2>
 
-<p>For a long time, the major challenge for robotics was navigation and thereby necessarily localization and mapping. To perform a task, however, a robot often needs to interact with physical objects in the environment with close contact. This is required for lifting, transporting, and using objects as tools. Consequently, desiging grasps, that is identifying the parameters of the manipulator (hand) relative to the object with respect to objectives, is now a fundamental challenge in robotics. Here, both object shape and degrees of freedom of the manipulator intorduce complex spaces for decision making.</p>
+<p>For a long time, the robotic grasping community focuses too much on the grasp planning part. However, for real world applications, it is important to know whether the planned grasp is stable or not. In this research, we study how to predict the stability of a given grasp with trained grasping experience. Also, if a grasp is predicted as unstable, we devise an adaptation strategy to stabilize the given grasp. Moreover, to close the loop between initial planning and the adaptation process, we design a closed-loop adaptation strategy to stabilize the grasp while keep the hand grasp capability in mind.
+</p>
 
 <h3 id="fingertip-graps">Fingertip Graps</h3>
 
