@@ -118,7 +118,8 @@
   <p><img src="/images/icub-grasp.PNG" alt="Visualization of icub grasping." /></p>
 </div>
 
-<p>Predicting human behavior is essential to successful robot-to-human interaction. One interesting aspect of human behavior is how we behave in larger crowds. In these scenarios, humans are often modeled as particles that are affected by external and internal forces. In my research, I investigated how one of these models behaves, when only a small number of people is present and instead physical obstacles such as walls and doorways are introduces.</p>
+<p>Optimal grasp synthesis has traditionally been solved in two steps: determining optimal grasping points according
+to a specific quality criterion and then determining how to shape the hand to produce these grasping points. Generating optimal grasps depends on the position of contact points as much as the configuration of the robot hand and it would hence be desirable to solve this in a single step. This research takes advantage of new development in non-linear optimization and formulates the problem of grasp synthesis as a single constrained optimization problem, generating grasps that are at the same time feasible for the hand’s kinematics and optimal according to a force related quality measure. The approach is validated on the 9 degrees of freedom hand of the iCub humanoid robot.</p>
 
 <h3 id="tracking-pedestrians">Tracking Pedestrians</h3>
 
