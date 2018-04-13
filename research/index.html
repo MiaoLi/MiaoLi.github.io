@@ -136,13 +136,17 @@ feasible hand configurations for realizing planned contacts using different robo
 
 <p><br /></p>
 
-<h3 id="socially-normative-navigation">Socially Normative Navigation</h3>
+<h3 id="grasp-with-task-specific-contact">Grasp with Task-specific Contact</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="/images/irl.png" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/task-grasp.PNG" alt="Visualization of grasp planning under task requirements." /></p>
 </div>
 
-<p>A robot that operates in a human-populated environment best behaves in an expectable and familiar way when navigating. In my research, I therefore used learning from demonstration to imitate human navigation behavior in encounter and crowd situations. The method learns a distribution over behaviors and at the same time provides a cost function for motion planning.</p>
+<p>Generating robotic grasps for given tasks is a difficult problem. This research proposes a learning-based approach
+to generate suitable partial power grasp for a set of tool-using tasks. First a number of valid partial power grasps
+are sampled in simulation and encoded as a probabilistic model, which encapsulates the relations among the task-specific contact, the graspable object feature and the finger joints. With the
+learned model, suitable grasps can be generated on-line given the task-specific contact. Moreover, a grasp adaptation strategy is proposed to locally adjust the specified contact in order to increase the grasp feasibility and also the quality of the final found grasp. We demonstrate the effectiveness of our approach
+using a 16 DOF robotic hand – Allegro Hand, on a variety of tool-using tasks</p>
 
 <p><br /></p>
 <h3 id="audio-based-activity-recognition">Audio-based Activity Recognition</h3>
