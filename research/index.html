@@ -147,14 +147,15 @@ to generate suitable partial power grasp for a set of tool-using tasks. First a 
 are sampled in simulation and encoded as a probabilistic model, which encapsulates the relations among the task-specific contact, the graspable object feature and the finger joints. With the
 learned model, suitable grasps can be generated on-line given the task-specific contact. Moreover, a grasp adaptation strategy is proposed to locally adjust the specified contact in order to increase the grasp feasibility and also the quality of the final found grasp. We demonstrate the effectiveness of our approach
 using a 16 DOF robotic hand – Allegro Hand, on a variety of tool-using tasks</p>
+<p><br /></p>
 
 <h2 id="grasp-adaptation"><strong>Grasp Adaptation</strong></h2>
 
-<p>For a long time, the robotic grasping community focuses too much on the grasp planning part. However, for real world applications, it is important to know whether the planned grasp is stable or not. In this research, we study how to predict the stability of a given grasp with trained grasping experience. Also, if a grasp is predicted as unstable, we devise an adaptation strategy to stabilize the given grasp. Moreover, to close the loop between initial planning and the adaptation process, we design a closed-loop adaptation strategy to stabilize the grasp in real-time while keep the hand grasp capability in mind.
+<p>For a long time, the robotic grasping community focuses too much on the grasp planning part. However, for real world applications, it is important to know whether the planned grasp is stable or not. In this research, we study how to predict the stability of a given grasp with trained grasping experience from the perspective of the grasped object. With the learned stability estimator, if a grasp is predicted as unstable, we devise an adaptation strategy to stabilize the given grasp. Moreover, to close the loop between initial planning and the adaptation process, we design a closed-loop adaptation strategy to stabilize the grasp in real-time while keep the hand grasp capability in mind.
 </p>
 
 <h3 id="learning-grasp-stability">Learning Object-level Impedance Control</h3>
-<div class="pull-right" style="width: 200px; margin-right: 20px;">
+<div class="pull-right" style="width: 300px; margin-right: 20px;">
   <p><img src="/images/object-level-impedance.PNG" alt="Visualization of learning object-level impedance." /></p>
 </div>
 
@@ -182,17 +183,26 @@ with the SynTouch tactile sensors.</p>
 i.e., how the object is grasped, to maintain the stability of the grasp. Such a change of grasp configuration is called grasp adaptation and it depends on the controller, the employed sensory feedback and the type of uncertainties inherit to the problem. This paper proposes a grasp adaptation strategy to deal with uncertainties about physical properties of objects, such as the object weight and the friction at the contact points. Based on an object-level impedance controller, a grasp stability estimator is first learned in the object frame. Once a grasp is
 predicted to be unstable by the stability estimator, a grasp adaptation strategy is triggered according to the similarity between the new grasp and the training examples. Experimental results demonstrate that our method improves the grasping performance on novel objects with different physical properties from those used for training</p>
 
-
-
 <p><br /></p>
 
-<h3 id="catenane-caging">Catenane Caging</h3>
+<h3 id="dynamic-grasp-adaptation">Dynamic Grasp Adaptation</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="/images/caging.png" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/grasp-adaptation.jpg" alt="Visualization of dynamic grasp adaptation." /></p>
 </div>
 
-<p>Another way to move or manipulate an object is caging. A caged object is not ridgitly fixated but instead merely constraint in its motion such that it cannot escape. This has the advantage that the interaction between object and manipulator is felxible and that the object’s small-scale geometry is less relevant to caging compared to grasp design. However, caging is difficult because of its general and essentially geometric nature. Reasoning about the spacial relationship of two bodies in geometric terms is computationally hard. In my research, I therefore used topoligical representation of object and hand allowing direct analysis of the caging property. The representation is based on holes and allows to model a type of caging as inter-linking object and hand like links of a chain.</p>
+<p>We present a unified framework for grasp planning
+and in-hand grasp adaptation using visual, tactile, and
+proprioceptive feedback. The main objective of the proposed
+framework is to enable fingertip grasping by addressing problems
+of changed weight of the object, slippage, and external disturbances.
+For this purpose we introduce the Hierarchical Fingertip
+Space as a representation enabling optimization for both efficient
+grasp synthesis and online finger gaiting. Grasp synthesis is followed
+by a grasp adaptation step that consists of both grasp force
+adaptation through impedance control and regrasping/finger gaiting
+when the former is not sufficient. Experimental evaluation is
+conducted on an Allegro hand mounted on a Kuka LWR arm.</p>
 
 <p><br /></p>
 
