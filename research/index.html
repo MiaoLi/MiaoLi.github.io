@@ -150,16 +150,18 @@ using a 16 DOF robotic hand – Allegro Hand, on a variety of tool-using tasks</
 
 <h2 id="grasp-adaptation"><strong>Grasp Adaptation</strong></h2>
 
-<p>For a long time, the robotic grasping community focuses too much on the grasp planning part. However, for real world applications, it is important to know whether the planned grasp is stable or not. In this research, we study how to predict the stability of a given grasp with trained grasping experience. Also, if a grasp is predicted as unstable, we devise an adaptation strategy to stabilize the given grasp. Moreover, to close the loop between initial planning and the adaptation process, we design a closed-loop adaptation strategy to stabilize the grasp while keep the hand grasp capability in mind.
+<p>For a long time, the robotic grasping community focuses too much on the grasp planning part. However, for real world applications, it is important to know whether the planned grasp is stable or not. In this research, we study how to predict the stability of a given grasp with trained grasping experience. Also, if a grasp is predicted as unstable, we devise an adaptation strategy to stabilize the given grasp. Moreover, to close the loop between initial planning and the adaptation process, we design a closed-loop adaptation strategy to stabilize the grasp in real-time while keep the hand grasp capability in mind.
 </p>
 
 <h3 id="learning-grasp-stability">Learning Grasp Stability</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="/images/hang2014combinatorial.jpg" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/grasp-stability.PNG" alt="Visualization of learning grasp stability." /></p>
 </div>
 
-<p>Often, we only hold objects with our fingertips. This is a type of grasp that allows us to manipulate the object and is often associated with precision in interaction. For desiging a fingertip grasp, we have to analyze the object’s shape and understand the hand’s abilities since a grasp can only exist where the geometry of object and hand meet. What is challenging in fingertip grasp design is the large and complex search space of grasps on an object and the complex relationship to the hand’s kinematic. Additonally, grasp objectives such as mechanical stability are difficult to decompose into decoupled problems and therefore make it difficult to operate on partial solutions as is often the case in optimization.</p>
+<p>To perform robust grasping, a multi-fingered robotic hand should be able to adapt its grasping configuration,
+i.e., how the object is grasped, to maintain the stability of the grasp. Such a change of grasp configuration is called grasp adaptation and it depends on the controller, the employed sensory feedback and the type of uncertainties inherit to the problem. This paper proposes a grasp adaptation strategy to deal with uncertainties about physical properties of objects, such as the object weight and the friction at the contact points. Based on an object-level impedance controller, a grasp stability estimator is first learned in the object frame. Once a grasp is
+predicted to be unstable by the stability estimator, a grasp adaptation strategy is triggered according to the similarity between the new grasp and the training examples. Experimental results demonstrate that our method improves the grasping performance on novel objects with different physical properties from those used for training</p>
 
 <div class="pull-right" style="width: 200px; margin-right: 20px;">
   <p><img src="/images/hang2017framework.png" alt="Visualization of people tracking." /></p>
