@@ -153,6 +153,25 @@ using a 16 DOF robotic hand – Allegro Hand, on a variety of tool-using tasks</
 <p>For a long time, the robotic grasping community focuses too much on the grasp planning part. However, for real world applications, it is important to know whether the planned grasp is stable or not. In this research, we study how to predict the stability of a given grasp with trained grasping experience. Also, if a grasp is predicted as unstable, we devise an adaptation strategy to stabilize the given grasp. Moreover, to close the loop between initial planning and the adaptation process, we design a closed-loop adaptation strategy to stabilize the grasp in real-time while keep the hand grasp capability in mind.
 </p>
 
+<h3 id="learning-grasp-stability">Learning Object-level Impedance Control</h3>
+<div class="pull-right" style="width: 200px; margin-right: 20px;">
+  <p><img src="/images/object-level-impedance.PNG" alt="Visualization of learning object-level impedance." /></p>
+</div>
+
+<p>Object-level impedance control is of great importance
+for object-centric tasks, such as robust grasping and
+dexterous manipulation. Despite the recent progresses on this
+topic, how to specify the desired object impedance for a given
+task remains an open issue. In this paper, we decompose
+the object’s impedance into two complementary components–
+the impedance for stable grasping and impedance for object
+manipulation. Then, we present a method to learn the desired
+object’s manipulation impedance (stiffness) using data obtained
+from human demonstration. The approach is validated in two
+tasks, for robust grasping of a wine glass and for inserting a
+bulb, using the 16 degrees of freedom Allegro Hand mounted
+with the SynTouch tactile sensors.</p>
+
 <h3 id="learning-grasp-stability">Learning Grasp Stability</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
@@ -163,11 +182,7 @@ using a 16 DOF robotic hand – Allegro Hand, on a variety of tool-using tasks</
 i.e., how the object is grasped, to maintain the stability of the grasp. Such a change of grasp configuration is called grasp adaptation and it depends on the controller, the employed sensory feedback and the type of uncertainties inherit to the problem. This paper proposes a grasp adaptation strategy to deal with uncertainties about physical properties of objects, such as the object weight and the friction at the contact points. Based on an object-level impedance controller, a grasp stability estimator is first learned in the object frame. Once a grasp is
 predicted to be unstable by the stability estimator, a grasp adaptation strategy is triggered according to the similarity between the new grasp and the training examples. Experimental results demonstrate that our method improves the grasping performance on novel objects with different physical properties from those used for training</p>
 
-<div class="pull-right" style="width: 200px; margin-right: 20px;">
-  <p><img src="/images/hang2017framework.png" alt="Visualization of people tracking." /></p>
-</div>
 
-<p>In our research, we turn to abstraction and optimization to design fingertip grasps and iteratively improve solutions on more exact representations of the same problem. For this, we introduced the object’s fingertip space hierarchy  which describes all positions where a fingertip can be placed and their similarity in several levels of abstraction. We also reduced optimal fingertip grasping to path-finding which allows for efficient and heuristic algorithms for optimal grasping.</p>
 
 <p><br /></p>
 
