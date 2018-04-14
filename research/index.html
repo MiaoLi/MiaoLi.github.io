@@ -215,11 +215,21 @@ robust physical interaction with the environment, different models have been inv
 <h3 id="modular-approach"> Learning Manipulation Strategies from Human Demonstration</h3>
 
 <div class="pull-left" style="width: 300px; margin-right: 20px;">
-  <p><img src="/images/modular-approach.PNG" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/modular-approach.PNG" alt="Visualization of modular approach." /></p>
 </div>
 
 <p>Here we introduce a modular approach for learning a manipulation strategy from
-human demonstration. Firstly we record a human performing a task that requires an adaptive control strategy in different conditions, i.e. different task contexts.We then perform modular decomposition of the control strategy, using phases of the recorded actions to guide segmentation. Each module represents a part of the strategy, encoded as a pair of forward and inverse models. All modules contribute to the final control policy; their recommendations are integrated via a system of weighting based on their own estimated error in the current task context.We validate our approach by demonstrating it, both in a simulation for clarity, and on a real robot platform to demonstrate robustness and capacity to generalise. The robot task is opening bottle caps. We show that our approach can modularize an adaptive control strategy and generate appropriate motor commands for the robot to accomplish the complete task, even for novel bottles</p>
+human demonstration. Firstly we record a human performing a task that requires an adaptive control strategy in different conditions, i.e. different task contexts.We then perform modular decomposition of the control strategy, using phases of the recorded actions to guide segmentation. Each module represents a part of the strategy, encoded as a pair of forward and inverse models. All modules contribute to the final control policy; their recommendations are integrated via a system of weighting based on their own estimated error in the current task context.We validate our approach by demonstrating it, both in a simulation for clarity, and on a real robot platform to demonstrate robustness and capacity to generalise. The robot task is opening bottle caps. We show that our approach can modularize an adaptive control strategy and generate appropriate motor commands for the robot to accomplish the complete task, even for novel bottles.</p>
+
+<h3 id="manifold-learning"> Learning Task Manifold</h3>
+
+<div class="pull-left" style="width: 300px; margin-right: 20px;">
+  <p><img src="/images/task-manifold.PNG" alt="Visualization of task manifold." /></p>
+</div>
+
+<p>Reliable physical interaction is essential for many important challenges in robotic manipulation. In this paper,
+we consider Constrained Object Manipulations tasks (COM), i.e. tasks for which constraints are imposed on the grasped
+object rather than on the robot’s configuration. To enable robust physical interaction with the environment, this paper presents a manifold learning approach to encode the COM task as a vector field. This representation enables an intuitive task-consistent adaptation based on an object-level impedance controller. Simulations and experimental evaluations demonstrate the effectiveness of our approach for several typical COM tasks, including dexterous manipulation and contour following.</p>
 
 
   </article>
