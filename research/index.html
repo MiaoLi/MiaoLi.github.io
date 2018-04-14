@@ -230,7 +230,19 @@ robust physical interaction with the environment, different models have been inv
 we consider Constrained Object Manipulations tasks (COM), i.e. tasks for which constraints are imposed on the grasped
 object rather than on the robot’s configuration. To enable robust physical interaction with the environment, this paper presents a manifold learning approach to encode the COM task as a vector field. This representation enables an intuitive task-consistent adaptation based on an object-level impedance controller. Simulations and experimental evaluations demonstrate the effectiveness of our approach for several typical COM tasks, including dexterous manipulation and contour following.</p>
 
+<h3 id="force-based-skill"> Learning Force-based Skills</h3>
 
+<div class="pull-left" style="width: 250px; margin-right: 20px;">
+  <p><img src="/images/force-based-skill.PNG" alt="Visualization of force-based-skill." /></p>
+</div>
+<p>Many human manipulation skills are force relevant or even force dominant, such as opening a bottle cap,
+assembling a furniture, etc. However, it is still a difficult task to endow a robot with these skills, which largely dues to the complexity on the representation and planning of these skills. This research presents a learning-based approach to transferring force-dominant skills from human demonstration to a robot. First, the force-dominant skill is encapsulated as a statistical model where the key parameters are learned from the
+demonstrated data (motion, force). Second, based on the learned skill model, a task planner is devised that specifies the motion and/or the force profile for a given manipulation task. Finally,
+the learned skill model is further integrated with an adaptive controller that offers a task-consistent force adaptation during on-line execution. The effectiveness of the proposed approach is validated in two experimental scenarios, namely complex surface polishing and peg-in-hole assembly</p>
+<!-- <div class="pull-right" style="width: 400px; margin-right: 20px;">
+  <p><img src="/images/polishing.PNG" alt="Visualization of force-based-skill." /></p> -->
+
+</div>
   </article>
 
 </div>
