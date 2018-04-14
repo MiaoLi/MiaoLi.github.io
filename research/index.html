@@ -212,15 +212,14 @@ conducted on an Allegro hand mounted on a Kuka LWR arm.</p>
 and hard to express analytically. Extended from the robotic grasping research, in this research we study the underlying interaction model between the object and the environment. To enable
 robust physical interaction with the environment, different models have been investigated to represent the task at hand, including modular approach, manifold learning, etc. To facilitate the model learning process, we adopt the learning from demonstration framework where the data collected from demonstration are used from model training. </p>
 
-<h3 id="modular-approach"> Learning Modular Approach from Human Demonstration</h3>
+<h3 id="modular-approach"> Learning Manipulation Strategies from Human Demonstration</h3>
 
 <div class="pull-left" style="width: 250px; margin-right: 20px;">
-  <p><img src="/images/stork2015learning-A.jpg" alt="Visualization of people tracking." /></p>
+  <p><img src="/images/modular-approach.PNG" alt="Visualization of people tracking." /></p>
 </div>
 
-<p>In-hand manipulation is an important ability for humans. Almost all objects we pick up we later re-orient and re-position to use them, e.g. a pencil. At the same time, we often use external ressources when interacting with objects we hold in our hands. One example is pushing an object against a contact in the environment. To a simple manipulator this provides a range interactions that otherwise would only be accessible to a hand with many fingers and joints, called external dexterity.</p>
-
-<p>In my research, I modeled an in-hand manipulation scenario with external dexterity as a PSR and learned a representation of the system only based on tactile feedback from pressure sensors in the hand’s fingertips. This system is challenging to learn and model because many different states result in similar observations (aliasing) and the tedious procedure for data collection inhibits large sets of traning examples.</p>
+<p>Here we introduce a modular approach for learning a manipulation strategy from
+human demonstration. Firstly we record a human performing a task that requires an adaptive control strategy in different conditions, i.e. different task contexts.We then perform modular decomposition of the control strategy, using phases of the recorded actions to guide segmentation. Each module represents a part of the strategy, encoded as a pair of forward and inverse models. All modules contribute to the final control policy; their recommendations are integrated via a system of weighting based on their own estimated error in the current task context.We validate our approach by demonstrating it, both in a simulation for clarity, and on a real robot platform to demonstrate robustness and capacity to generalise. The robot task is opening bottle caps. We show that our approach can modularize an adaptive control strategy and generate appropriate motor commands for the robot to accomplish the complete task, even for novel bottles</p>
 
 
   </article>
