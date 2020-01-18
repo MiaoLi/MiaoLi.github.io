@@ -129,7 +129,7 @@ to a specific quality criterion and then determining how to shape the hand to pr
   <p><img src="/images/shape-grasp.PNG" alt="Visualization of grasp planning under shape uncertainty." /></p>
 </div>
 
-<p>An important challenge in robotics is to achieve robust performance in object grasping and manipulation,
+<p style="text-align:justify;">An important challenge in robotics is to achieve robust performance in object grasping and manipulation,
 dealing with noise and uncertainty. This research presents an approach for addressing the performance
 of dexterous grasping under shape uncertainty. In our approach, the uncertainty in object shape is
 parametrized and incorporated as a constraint into grasp planning. The proposed approach is used to plan
@@ -143,7 +143,7 @@ feasible hand configurations for realizing planned contacts using different robo
   <p><img src="/images/task-grasp.PNG" alt="Visualization of grasp planning under task requirements." /></p>
 </div>
 
-<p>Generating robotic grasps for given tasks is a difficult problem. This research proposes a learning-based approach
+<p style="text-align:justify;">Generating robotic grasps for given tasks is a difficult problem. This research proposes a learning-based approach
 to generate suitable partial power grasp for a set of tool-using tasks. First a number of valid partial power grasps
 are sampled in simulation and encoded as a probabilistic model, which encapsulates the relations among the task-specific contact, the graspable object feature and the finger joints. With the
 learned model, suitable grasps can be generated on-line given the task-specific contact. Moreover, a grasp adaptation strategy is proposed to locally adjust the specified contact in order to increase the grasp feasibility and also the quality of the final found grasp. We demonstrate the effectiveness of our approach
@@ -152,7 +152,7 @@ using a 16 DOF robotic hand – Allegro Hand, on a variety of tool-using tasks.<
 
 <h2 id="grasp-adaptation"><strong>Grasp Adaptation</strong></h2>
 
-<p>For a long time, the robotic grasping community focuses too much on the grasp planning part. However, for real world applications, it is important to know whether the planned grasp is stable or not. In this research, we study how to predict the stability of a given grasp with trained grasping experience from the perspective of the grasped object. With the learned stability estimator, if a grasp is predicted as unstable, we devise an adaptation strategy to stabilize the given grasp. Moreover, to close the loop between initial planning and the adaptation process, we design a closed-loop adaptation strategy to stabilize the grasp in real-time while keep the hand grasp capability in mind.
+<p style="text-align:justify;">For a long time, the robotic grasping community focuses too much on the grasp planning part. However, for real world applications, it is important to know whether the planned grasp is stable or not. In this research, we study how to predict the stability of a given grasp with trained grasping experience from the perspective of the grasped object. With the learned stability estimator, if a grasp is predicted as unstable, we devise an adaptation strategy to stabilize the given grasp. Moreover, to close the loop between initial planning and the adaptation process, we design a closed-loop adaptation strategy to stabilize the grasp in real-time while keep the hand grasp capability in mind.
 </p>
 
 <h3 id="learning-grasp-stability">Learning Object-level Impedance Control</h3>
@@ -160,7 +160,7 @@ using a 16 DOF robotic hand – Allegro Hand, on a variety of tool-using tasks.<
   <p><img src="/images/object-level-impedance.PNG" alt="Visualization of learning object-level impedance." /></p>
 </div>
 
-<p>Object-level impedance control is of great importance
+<p style="text-align:justify;">Object-level impedance control is of great importance
 for object-centric tasks, such as robust grasping and
 dexterous manipulation. Despite the recent progresses on this
 topic, how to specify the desired object impedance for a given
@@ -180,7 +180,7 @@ with the SynTouch tactile sensors.</p>
   <p><img src="/images/grasp-stability.PNG" alt="Visualization of learning grasp stability." /></p>
 </div>
 
-<p>To perform robust grasping, a multi-fingered robotic hand should be able to adapt its grasping configuration,
+<p style="text-align:justify;">To perform robust grasping, a multi-fingered robotic hand should be able to adapt its grasping configuration,
 i.e., how the object is grasped, to maintain the stability of the grasp. Such a change of grasp configuration is called grasp adaptation and it depends on the controller, the employed sensory feedback and the type of uncertainties inherit to the problem. This paper proposes a grasp adaptation strategy to deal with uncertainties about physical properties of objects, such as the object weight and the friction at the contact points. Based on an object-level impedance controller, a grasp stability estimator is first learned in the object frame. Once a grasp is
 predicted to be unstable by the stability estimator, a grasp adaptation strategy is triggered according to the similarity between the new grasp and the training examples. Experimental results demonstrate that our method improves the grasping performance on novel objects with different physical properties from those used for training.</p>
 
@@ -192,7 +192,7 @@ predicted to be unstable by the stability estimator, a grasp adaptation strategy
   <p><img src="/images/grasp-adaptation.jpg" alt="Visualization of dynamic grasp adaptation." /></p>
 </div>
 
-<p>We present a unified framework for grasp planning
+<p style="text-align:justify;">We present a unified framework for grasp planning
 and in-hand grasp adaptation using visual, tactile, and
 proprioceptive feedback. The main objective of the proposed
 framework is to enable fingertip grasping by addressing problems
@@ -209,7 +209,7 @@ conducted on an Allegro hand mounted on a Kuka LWR arm.</p>
 
 <h2 id="compliant-manipulation"><strong>Compliant Manipulation</strong></h2>
 
-<p>Object manipulation is a challenging task for robotics, as the physics involved in object interaction is complex
+<p style="text-align:justify;">Object manipulation is a challenging task for robotics, as the physics involved in object interaction is complex
 and hard to express analytically. Extended from the robotic grasping research, in this research we study the underlying interaction model between the object and the environment. To enable
 robust physical interaction with the environment, different models have been investigated to represent the task at hand, including modular approach, manifold learning, etc. To facilitate the model learning process, we adopt the learning from demonstration framework where the data collected from demonstration are used from model training. </p>
 
@@ -219,14 +219,14 @@ robust physical interaction with the environment, different models have been inv
   <p><img src="/images/modular-approach.PNG" alt="Visualization of modular approach." /></p>
 </div>
 
-<p>Here we introduce a modular approach for learning a manipulation strategy from human demonstration. Firstly we record a human performing a task that requires an adaptive control strategy in different conditions, i.e. different task contexts.We then perform modular decomposition of the control strategy, using phases of the recorded actions to guide segmentation. Each module represents a part of the strategy, encoded as a pair of forward and inverse models. All modules contribute to the final control policy; their recommendations are integrated via a system of weighting based on their own estimated error in the current task context.We validate our approach by demonstrating it, both in a simulation for clarity, and on a real robot platform to demonstrate robustness and capacity to generalise. The robot task is opening bottle caps. We show that our approach can modularize an adaptive control strategy and generate appropriate motor commands for the robot to accomplish the complete task, even for novel bottles.</p>
+<p style="text-align:justify;">Here we introduce a modular approach for learning a manipulation strategy from human demonstration. Firstly we record a human performing a task that requires an adaptive control strategy in different conditions, i.e. different task contexts.We then perform modular decomposition of the control strategy, using phases of the recorded actions to guide segmentation. Each module represents a part of the strategy, encoded as a pair of forward and inverse models. All modules contribute to the final control policy; their recommendations are integrated via a system of weighting based on their own estimated error in the current task context.We validate our approach by demonstrating it, both in a simulation for clarity, and on a real robot platform to demonstrate robustness and capacity to generalise. The robot task is opening bottle caps. We show that our approach can modularize an adaptive control strategy and generate appropriate motor commands for the robot to accomplish the complete task, even for novel bottles.</p>
 
 <h3 id="bimanual-tactile-exploration"> Bimanual Compliant Tactile Exploration</h3>
 
 <div class="pull-left" style="width: 350px; margin-right: 20px;">
   <p><img src="/images/bimanual-exploration.PNG" alt="Visualization of bimanual exploration." /></p>
 </div>
-<p>Humans have an incredible capacity to learn properties of objects by pure tactile exploration with their two
+<p style="text-align:justify;">Humans have an incredible capacity to learn properties of objects by pure tactile exploration with their two
 hands. With robots moving into human-centred environment, tactile exploration becomes more and more important as vision may be occluded easily by obstacles or fail because of different illumination conditions. In this paper, we present our first results on bimanual compliant tactile exploration, with the goal to identify objects and grasp them. An exploration strategy is proposed to guide the motion of the two arms and fingers along the object. From this tactile exploration, a point cloud is obtained for each object. As the point cloud is intrinsically
 noisy and un-uniformly distributed, a filter based on Gaussian Processes is proposed to smooth the data. This data is used at runtime for object identification. Experiments on an iCub humanoid robot have been conducted to validate our approach.</p>
 
@@ -238,7 +238,7 @@ noisy and un-uniformly distributed, a filter based on Gaussian Processes is prop
   <p><img src="/images/task-manifold.PNG" alt="Visualization of task manifold." /></p>
 </div>
 
-<p>Reliable physical interaction is essential for many important challenges in robotic manipulation. In this work,
+<p style="text-align:justify;">Reliable physical interaction is essential for many important challenges in robotic manipulation. In this work,
 we consider Constrained Object Manipulations tasks (COM), i.e. tasks for which constraints are imposed on the grasped
 object rather than on the robot’s configuration. To enable robust physical interaction with the environment, this paper presents a manifold learning approach to encode the COM task as a vector field. This representation enables an intuitive task-consistent adaptation based on an object-level impedance controller. Simulations and experimental evaluations demonstrate the effectiveness of our approach for several typical COM tasks, including dexterous manipulation and contour following.</p>
 
@@ -247,7 +247,7 @@ object rather than on the robot’s configuration. To enable robust physical int
 <div class="pull-left" style="width: 500px; margin-right: 20px;">
   <p><img src="/images/force-based-skill.PNG" alt="Visualization of force-based-skill." /></p>
 </div>
-<p>Many human manipulation skills are force relevant or even force dominant, such as opening a bottle cap,
+<p style="text-align:justify;">Many human manipulation skills are force relevant or even force dominant, such as opening a bottle cap,
 assembling a furniture, etc. However, it is still a difficult task to endow a robot with these skills, which largely dues to the complexity on the representation and planning of these skills. This research presents a learning-based approach to transferring force-dominant skills from human demonstration to a robot. First, the force-dominant skill is encapsulated as a statistical model where the key parameters are learned from the
 demonstrated data (motion, force). Second, based on the learned skill model, a task planner is devised that specifies the motion and/or the force profile for a given manipulation task. Finally,
 the learned skill model is further integrated with an adaptive controller that offers a task-consistent force adaptation during on-line execution. The effectiveness of the proposed approach is validated in two experimental scenarios, namely complex surface polishing and peg-in-hole assembly.</p>
