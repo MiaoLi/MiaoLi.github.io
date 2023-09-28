@@ -259,7 +259,7 @@ the learned skill model is further integrated with an adaptive controller that o
 
 <h3 id="tactile-palm">A Biomimetic Tactile Palm for Robotic Object
 Manipulation</h3>
-<div class="pull-right" style="width: 300px; margin-right: 20px;">
+<div class="pull-right" style="width: 400px; margin-right: 20px;">
   <p><img src="/images/tactilepalm.png" border="0" alt="The tactile responses to different objects." /></p>
 </div>
 
@@ -333,6 +333,83 @@ proposed approach can generate ultrasound scanning strategies
 for diverse populations, with the similarity to the sonographer’s
 demonstrations and quantitative results significantly better than
 our previous method.
+<p><br /></p>
+
+<h3 id="learning-grasp">Learning Grasp Ability Enhancement
+through Deep Shape Generation</h3>
+<div class="pull-left" style="width: 400px; margin-right: 20px;">
+  <p><img src="/images/learninggrasp.png" alt="Original and augmented data distribution comparison." /></p>
+</div>
+
+<p style="text-align:justify;">Data-driven especially deep learning-based approaches have
+become a dominant paradigm for robotic grasp planning during the past
+decade. However, the performance of these methods is greatly influenced by the quality of the training dataset available. In this paper, we
+propose a framework to generate object shapes to augment the grasping
+dataset and thus can improve the grasp ability of a pre-designed deep
+neural network. First, the object shapes are embedded into a low dimen-
+sional feature space using an encoder-decoder structure network. Then,
+the rarity and graspness scores are computed for each object shape using
+outlier detection and grasp quality criteria. Finally, new objects are gen-
+erated in feature space leveraging the original high rarity and graspness
+score objects' feature. Experimental results show that the grasp ability of a deep-learning-based grasp planning network can be eectively
+improved with the generated object shapes.
+<p><br /></p>
+
+<h3 id="posefusion">PoseFusion: Robust Object-in-Hand Pose Estimation with SelectLSTM</h3>
+<div class="pull-right" style="width: 400px; margin-right: 20px;">
+  <p><img src="/images/posefusion.png" border="0" alt="Experimental setup for the ObjectInHand dataset collection." /></p>
+</div>
+
+<p style="text-align:justify;">Accurate estimation of the relative pose between
+an object and a robot hand is critical for many manipulation
+tasks. However, most of the existing object-in-hand pose
+datasets use two-finger grippers and also assume that the object
+remains fixed in the hand without any relative movements,
+which is not representative of real-world scenarios. To address
+this issue, a 6D object-in-hand pose dataset is proposed using
+a teleoperation method with an anthropomorphic Shadow
+Dexterous hand. Our dataset comprises RGB-D images, proprioception
+and tactile data, covering diverse grasping poses,
+finger contact states, and object occlusions. To overcome the
+significant hand occlusion and limited tactile sensor contact in
+real-world scenarios, we propose PoseFusion, a hybrid multimodal
+fusion approach that integrates the information from
+visual and tactile perception channels. PoseFusion generates
+three candidate object poses from three estimators (tactile only,
+visual only, and visuo-tactile fusion), which are then filtered
+by a SelectLSTM network to select the optimal pose, avoiding
+inferior fusion poses resulting from modality collapse. Extensive
+experiments demonstrate the robustness and advantages of our
+framework. All data and codes are available on the project
+website: https://elevenjiang1.github.io/ObjectInHand-Dataset/.
+<p><br /></p>
+
+<h3 id="graspada">GraspAda: Deep Grasp Adaptation through Domain Transfer</h3>
+<div class="pull-left" style="width: 400px; margin-right: 20px;">
+  <p><img src="/images/graspada.png" alt="Our proposed grasp feature-oriented domain adaptation method
+operates on input grasp data." /></p>
+</div>
+
+<p style="text-align:justify;">Learning-based methods for robotic grasping have
+been shown to yield high performance. However, they rely
+on expensive-to-acquire and well-labeled datasets. In addition,
+how to generalize the learned grasping ability across different
+scenarios is still unsolved. In this paper, we present a novel
+grasp adaptation strategy to transfer the learned grasping
+ability to new domains based on visual data using a new grasp
+feature representation. We present a conditional generative
+model for visual data transformation. By leveraging the deep
+feature representational capacity from the well-trained grasp
+synthesis model, our approach utilizes feature-level contrastive
+representation learning and adopts adversarial learning on
+output space. This way we bridge the domain gap between the
+new domain and the training domain while keeping consistency
+during the adaptation process. Based on transformed input
+grasp data via the generator, our trained model can generalize
+to new domains without any fine-tuning. The proposed method
+is evaluated on benchmark datasets and based on real robot
+experiments. The results show that our approach leads to high
+performance in new scenarios.
 <p><br /></p>
 
 </div>
