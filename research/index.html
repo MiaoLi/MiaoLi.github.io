@@ -302,6 +302,39 @@ demonstrated to showcase the effectiveness of our proposed
 approach.
 <p><br /></p>
 
+<h3 id="autonomous-ultrasound">Learning Autonomous Ultrasound through Latent
+Representation and Skills Adaptation</h3>
+<div class="pull-right" style="width: 400px; margin-right: 20px;">
+  <p><img src="/images/autonomous-ultrasound.png" border="0" alt="The global workflow of autonomous ultrasound." /></p>
+</div>
+
+<p style="text-align:justify;">As medical ultrasound becoming a demanding examination
+approach nowadays, robotic ultrasound systems can
+facilitate the scanning process and prevent professional sonographers
+from repetitive and tedious work. Despite the progress
+recently, it is still a challenging task to enable robots to
+autonomously accomplish the ultrasound examination, which
+largely dues to the lack of a proper task representation method,
+and also a skill adaptation approach to generalize the scanning
+skills across different patients. To solve these problems, we propose the latent task representation
+and the skills adaptation for autonomous ultrasound
+in this paper. During the offline learning stage, the multimodal
+ultrasound skills are merged and embedded into low-dimensional
+space by a fully self-supervised framework, with taking clinically
+demonstrated ultrasound images, probe orientation, and contact
+force into account. These demonstrations in latent space will
+be encapsulated into a probability model. During the online
+execution stage, the optimal prediction will be selected and
+evaluated by the probability model. For any singular prediction
+with an unstable and uncertain state, the adaptation optimizer
+will fine-tune the prediction to a close and stable one in
+the high-confidence region. Experimental results show that the
+proposed approach can generate ultrasound scanning strategies
+for diverse populations, with the similarity to the sonographer’s
+demonstrations and quantitative results significantly better than
+our previous method.
+<p><br /></p>
+
 </div>
   </article>
 
