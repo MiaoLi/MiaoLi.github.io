@@ -115,53 +115,76 @@
 
 
 <!-- Updated practical applications; original examples and media preserved below -->
-<h2 id="current-industrial-applications">Current Applications and Industry Translation (2025–2026)</h2>
-<p style="text-align:justify;">Our applied research connects robotic grasping, tactile sensing and dexterous manipulation with real-world systems. Recent work spans humanoid robots, tactile data acquisition, healthcare-oriented robotics and scientific automation.</p>
+<h2 id="current-industrial-applications">Current Applications and Industry Translation</h2>
+<p style="text-align:justify;">Our applied work follows a simple path: collect richer physical-interaction data, learn robust manipulation skills, and deploy them in real environments. Recent systems span the Tianwen/Yuanyou humanoid platforms, HandX tactile-data infrastructure, and healthcare-oriented robotic systems.</p>
 
 <style>
 .app-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0 22px;}
 .app-photo-grid.three{grid-template-columns:repeat(3,minmax(0,1fr));}
 .app-photo-card{margin:0;border:1px solid #e5e5e5;background:#fafafa;padding:6px;}
-.app-photo-card img{width:100%;height:190px;display:block;object-fit:cover;background:#f2f2f2;}
+.app-photo-card img{width:100%;height:195px;display:block;object-fit:cover;background:#f2f2f2;}
 .app-photo-card figcaption{font-size:11px;color:#666;line-height:1.45;padding:6px 3px 2px;}
+.app-specs{background:#f8f8f8;border-left:3px solid #999;padding:10px 14px;margin:12px 0 18px;}
+.app-specs li{margin:5px 0;}
 @media(max-width:700px){.app-photo-grid,.app-photo-grid.three{grid-template-columns:1fr 1fr}.app-photo-card img{height:150px}}
 @media(max-width:480px){.app-photo-grid,.app-photo-grid.three{grid-template-columns:1fr}.app-photo-card img{height:auto}}
 </style>
 
-<h2 id="tianwen-humanoid">Tianwen Humanoid Robot — From Interaction to Real-world Manipulation</h2>
-<p style="text-align:justify;">The <strong>Tianwen</strong> humanoid platform has been used to explore stable physical interaction, tool handling and service-oriented manipulation. Public demonstrations have included handshaking, holding laboratory tools, grasping cups and serving coffee. These scenarios provide practical testbeds for our work on dexterous hands, visuo-tactile perception, VLA-based task understanding and closed-loop manipulation. <a href="https://3g.wuhan.gov.cn/sy/whyw/202502/t20250209_2530626.shtml">[Tianwen laboratory report]</a> <a href="https://3g.wuhan.gov.cn/sy/whyw/202502/t20250226_2539659.shtml">[Coffee-shop demonstration]</a></p>
+<h2 id="tianwen-humanoid">Tianwen / Yuanyou Humanoid Robots</h2>
+<p style="text-align:justify;">The Tianwen family provides a real platform for studying human–robot interaction, dexterous grasping, tool use and embodied foundation models. Public demonstrations have progressed from handshaking and microphone delivery, to grasping cups and laboratory tools, coffee service, brush calligraphy, and long-horizon autonomous manipulation. These systems connect our academic work in grasping, tactile sensing, VLA models and policy learning to real service environments.</p>
 <div class="app-photo-grid">
-  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563669826939.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Tianwen team discussing humanoid robot optimization in the Wuhan University laboratory" /><figcaption>Tianwen team working on robot optimization in the Wuhan University laboratory.</figcaption></figure>
-  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670173443.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/graspada.png'" alt="Tianwen humanoid robot holding an experimental tool" /><figcaption>Tianwen holding an experimental tool — a direct test of stable grasp and tool interaction.</figcaption></figure>
-  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670490642.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/posefusion.png'" alt="Tianwen humanoid robot grasping a cup during laboratory testing" /><figcaption>Tianwen grasping a cup during laboratory testing.</figcaption></figure>
-  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250226324915386142.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/robot-shop-out.JPG'" alt="Tianwen humanoid robot serving coffee in a real shop" /><figcaption>Tianwen serving coffee in a real shop environment, February 2025.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563669826939.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Tianwen team working on humanoid robot optimization" /><figcaption>Tianwen platform development and system integration.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670173443.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/graspada.png'" alt="Tianwen humanoid robot holding a laboratory tool" /><figcaption>Tool grasping — an example of stable contact and task-aware manipulation.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670490642.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/posefusion.png'" alt="Tianwen humanoid robot grasping a cup" /><figcaption>Everyday-object manipulation on the Tianwen platform.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/0941ea26238a4b49abefe60e3a5b4852.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Yuanyou humanoid robot writing Spring Festival couplets" /><figcaption>Yuanyou writing a Spring Festival couplet — sustained grasping and coordinated tool motion.</figcaption></figure>
 </div>
 
-<h2 id="handx-innovation">HandX Innovation — Tactile Data and Healthcare Robotics</h2>
-<p style="text-align:justify;">HandX Innovation, founded in 2024, focuses on translating manipulation research into practical embodied-intelligence systems, including tactile data collection, humanoid robot applications and healthcare-oriented robots.</p>
-
-<h3>HandX Fabric Tactile Data Glove</h3>
-<p style="text-align:justify;">The HandX fabric tactile glove is designed as a lightweight data interface for imitation learning and embodied manipulation. Public product reports describe 45 standard tactile sensing points with optional expansion to 800 points, together with synchronized tactile, camera and motion-tracking streams. <a href="https://news.hubeidaily.net/pc/c_5814518.html">[Product launch report]</a></p>
+<h2 id="handx-tactile">HandX Tactile Data Infrastructure</h2>
+<p style="text-align:justify;">A central HandX direction is to turn human physical interaction into scalable robot-training data. The latest fabric tactile glove integrates tactile sensing directly into a lightweight wearable form factor so that ordinary human demonstrations can capture not only motion and vision, but also the contact information that is otherwise difficult to recover from video alone. Public product materials and media reproductions of the HandX release describe the following configuration:</p>
+<div class="app-specs">
+<ul>
+<li><strong>45 tactile points as standard, expandable to 800 points</strong>, including dense sensing around the fingertips.</li>
+<li><strong>Approx. 120 g wearable glove</strong>, with BLE 5.0 and wired data transmission and at least 8 hours of stated battery life.</li>
+<li><strong>Multimodal synchronization</strong> with head/ego cameras, wrist cameras and motion trackers, enabling aligned touch–vision–motion demonstrations.</li>
+<li><strong>Ego + UMI-style collection interfaces</strong> for natural task demonstrations outside expensive motion-capture studios.</li>
+<li><strong>Software toolchain</strong> covering data annotation, API/SDK access, visualization and device management, with stated compatibility with ROS 2, OpenXR, Unity, Unreal Engine and NVIDIA Isaac Sim.</li>
+<li><strong>Data-service direction</strong>: collected tactile experience can be organized as reusable datasets rather than remaining tied to a single robot experiment.</li>
+</ul>
+</div>
+<p style="text-align:justify;">This direction is closely connected to our research on learning from human demonstrations: the goal is to preserve the hidden contact information in actions such as squeezing, sliding, inserting, rotating and handling fragile objects. HandX has also explored extending the same tactile platform toward pulse sensing and other physical-interaction measurements. <a href="https://www.jiemian.com/article/14844706.html">[Detailed HandX product article]</a> <a href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202609/t20260930_2855901.html">[Wuhan manufacturing and deployment report]</a></p>
 <div class="app-photo-grid">
-  <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/c499023de2ac4292bb59669337056885.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-tactile-demo.svg'" alt="HandX tactile technology presented at a product launch event" /><figcaption>HandX tactile sensing technology presented at the 2026 product launch.</figcaption></figure>
-  <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/4b805789a3c14ffa828438c048d01bff.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/tactilepalm.png'" alt="HandX tactile glove product set displayed during launch" /><figcaption>HandX tactile glove system and associated data-acquisition hardware.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250010.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-tactile-demo.svg'" alt="HandX fabric tactile glove product image" /><figcaption>HandX tactile glove: wearable contact sensing for human demonstrations.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250011.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/tactilepalm.png'" alt="HandX tactile data software platform" /><figcaption>From raw tactile signals to visualization, annotation and reusable robot-training data.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250012.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-tactile-demo.svg'" alt="HandX tactile glove product kit" /><figcaption>Standardized wearable hardware lowers the setup cost for continuous data collection.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250013.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/posefusion.png'" alt="HandX tactile glove deployment example" /><figcaption>HandX is positioned as a tactile-data interface connecting human demonstrations to robot learning.</figcaption></figure>
 </div>
 
-<h3>Robotic Moxibustion</h3>
-<p style="text-align:justify;">HandX's robotic moxibustion systems combine 3D body perception, target positioning and repeatable motion control to reproduce common moxibustion trajectories. Public reports show the robots operating in experience stores, exhibitions and healthcare-related demonstration settings. The images below show the actual systems in use; they illustrate engineering deployment rather than clinical efficacy. <a href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202604/t20260409_2750862.html">[Optics Valley report]</a> <a href="https://sw.wuhan.gov.cn/xwdt/gzdt/202606/t20260617_2778284.shtml">[Exhibition report]</a></p>
+<h2 id="handx-moxibustion">HandX Intelligent Moxibustion Robot</h2>
+<p style="text-align:justify;">The moxibustion robot is an example of using embodied intelligence to standardize a contact-adjacent human service task. According to public HandX materials and reports from Optics Valley and Hubei media, the system is available in several embodiments, including a fixed-base robotic arm, a wheeled platform and a humanoid configuration. The engineering workflow combines demonstrations from experienced practitioners with perception and robot control:</p>
+<div class="app-specs">
+<ul>
+<li><strong>Learning from standardized practitioner demonstrations</strong>: expert moxibustion videos are converted into reusable motion/knowledge representations.</li>
+<li><strong>3D body perception and target localization</strong>: the system scans the body contour and automatically matches target regions/acupoints.</li>
+<li><strong>Multiple traditional motion patterns</strong>: hovering, circular motion and pecking-style moxibustion are reproduced through controlled robot trajectories.</li>
+<li><strong>Closed-loop temperature and distance control</strong>: the robot adjusts height as the body moves, with preset safety thresholds.</li>
+<li><strong>Operational automation</strong>: automatic ignition, timed operation, one-button stop and smoke-management functions reduce the need for continuous manual handling.</li>
+<li><strong>Digital service record</strong>: reported deployments can generate a session report with operation data and thermal comparison information.</li>
+</ul>
+</div>
+<p style="text-align:justify;">The system has been demonstrated in a dedicated Optics Valley experience store and reported in multiple hospital and healthcare-related deployments. These examples show engineering deployment and user interaction; they should not be interpreted as claims of clinical efficacy. <a href="https://www.wehdz.gov.cn/2022/ggxw_68627/cydt_68630/202604/t20260408_2750267.shtml">[Optics Valley report]</a> <a href="https://www.ctdsb.net/c1734_202603/2680553.html">[On-site engineering report]</a></p>
 <div class="app-photo-grid three">
-  <figure class="app-photo-card"><img src="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202604/W020260409333272769412.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="HandX robotic moxibustion experience store" /><figcaption>Robotic moxibustion experience setting in Optics Valley.</figcaption></figure>
-  <figure class="app-photo-card"><img src="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202604/W020260409333273660661.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="HandX moxibustion robot operating near a user" /><figcaption>Robot positioning and controlled moxibustion motion in a real application setting.</figcaption></figure>
-  <figure class="app-photo-card"><img src="https://sw.wuhan.gov.cn/xwdt/gzdt/202606/W020260617337258549829_ORIGIN.png" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="HandX moxibustion robot demonstrated at an exhibition" /><figcaption>HandX robotic moxibustion system demonstrated at the 2026 service-trade exhibition.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/a377d82780fe4b32867695d041416955.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="User receiving robotic moxibustion at the HandX experience store" /><figcaption>Real user experience at the HandX moxibustion service site.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/1e0bebdfad244cdc9df33e249c817e06.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="HandX engineer adjusting a moxibustion robot" /><figcaption>HandX engineer debugging the moxibustion robot.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/b62fffb9500f49f5aff8542c30cc6f60.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="Humanoid robot guiding a customer in the moxibustion experience store" /><figcaption>Humanoid service robot guiding a customer in the experience-store workflow.</figcaption></figure>
 </div>
 
 <h3>Other Application Directions</h3>
 <ul>
-<li><strong>Industrial grasping, picking and manufacturing.</strong> Earlier work includes vision-guided picking, robust grasping, flexible manipulation, machine-vision inspection and factory automation.</li>
-<li><strong>AI for Science and automated laboratories.</strong> An emerging direction is embodied manipulation for scientific experiments, especially repeatable wet-lab operations and multimodal scientific-operation data collection.</li>
-<li><strong>Medical and physical-interaction robotics.</strong> Research includes robotic ultrasound, compliant physical interaction and other human-facing robotic systems.</li>
+<li><strong>Industrial grasping and manufacturing.</strong> Vision-guided picking, robust grasping, compliant manipulation, machine-vision inspection and robotized composite manufacturing.</li>
+<li><strong>AI for Science.</strong> Embodied manipulation for scientific experiments, especially repeatable wet-lab operations and multimodal scientific-operation data collection.</li>
+<li><strong>Medical and physical-interaction robotics.</strong> Earlier research includes robotic ultrasound and compliant physical interaction.</li>
 </ul>
-<p style="text-align:justify;">Earlier industrial grasping, compliant manipulation and machine-vision demonstrations remain below, including videos and photographs.</p>
+<p style="text-align:justify;">Earlier application demonstrations remain below as an archive of the progression from industrial grasping to today's embodied-intelligence systems.</p>
 <hr style="clear:both;" />
 <h2 id="robotic-grasping">Applications of Robust Grasping</h2>
 <ul>
