@@ -149,14 +149,52 @@
   <figure><a href="https://github.com/xtli12/Co-policy"><img src="https://raw.githubusercontent.com/xtli12/Co-policy/main/figs/Co-create/Semantic3x.gif" loading="lazy" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Humanoid robot music co-creation experiment in Co-policy" /></a><figcaption>Co-policy: responsive human–robot co-creation as another VLA-style embodied task.</figcaption></figure>
 </div>
 
-<h2 id="composite-layup"><strong>Robotic Composite-Material Layup and In-situ Defect Repair</strong></h2>
-<p style="text-align:justify;">Our robotic manufacturing work studies precision placement of CFRP patches under thermal and geometric constraints, then closes the loop with online inspection and targeted repair. The 2024 dual-arm planning paper addresses coordinated fiber-patch placement with temperature-loss constraints; the 2025 RCIM paper integrates online defect detection with robot-executed in-situ repair, forming a <strong>place–inspect–repair</strong> workflow for composite manufacturing. <a href="https://doi.org/10.1016/j.rcim.2024.102882">[RCIM 2025 paper]</a> <a href="https://doi.org/10.1016/j.engappai.2024.108518">[Dual-arm layup planning]</a></p>
-<div class="research-gallery">
-  <figure><a href="https://doi.org/10.1016/j.engappai.2024.108518"><img src="/images/cfrp-robot-workflow.svg" loading="lazy" alt="Dual-arm robot composite layup workflow" /></a><figcaption>Dual-arm robot layup and coordinated placement.</figcaption></figure>
-  <figure><a href="https://doi.org/10.1016/j.rcim.2024.102882"><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0736584524001698-gr1.jpg" loading="lazy" onerror="this.onerror=null;this.src='/images/cfrp-patch-repair-paper-schematic.svg'" alt="Robotized CFRP patch placement inspection and repair workflow from the paper" /></a><figcaption>Online detection and in-situ repair workflow from the CFRP study.</figcaption></figure>
-  <figure><a href="https://doi.org/10.1016/j.rcim.2024.102882"><img src="/images/cfrp-patch-repair-paper-schematic.svg" loading="lazy" alt="Robot closed-loop composite manufacturing illustration" /></a><figcaption>Closed-loop place–inspect–repair concept for composite manufacturing.</figcaption></figure>
+<h2 id="composite-layup"><strong>Robotic Composite Manufacturing, Inspection and Repair</strong></h2>
+<p style="text-align:justify;">Our composite-material work forms a connected line from <strong>robotic layup planning</strong>, to <strong>online defect detection and in-situ repair</strong>, and further to <strong>damage evaluation and repair optimization</strong>. Rather than showing a single generic workflow, the gallery below uses representative figures from several of our papers so that each research direction is visible through its own experimental or methodological result.</p>
+
+<div class="research-gallery composite-paper-gallery">
+  <figure>
+    <a href="https://doi.org/10.1016/j.engappai.2024.108518" target="_blank" rel="noopener noreferrer">
+      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0952197624006766-gr1.jpg"
+           loading="lazy"
+           onerror="this.onerror=null;this.src='/images/cfrp-robot-workflow.svg'"
+           alt="Paper figure showing the dual-arm collaborative composite layup system" />
+    </a>
+    <figcaption><strong>Dual-arm fiber patch placement with temperature-loss constraints</strong><br />Engineering Applications of Artificial Intelligence, 2024. The paper introduces the dual-arm collaborative layup system and temperature-aware RRT*-MTL planning.</figcaption>
+  </figure>
+
+  <figure>
+    <a href="https://doi.org/10.1016/j.rcim.2024.102882" target="_blank" rel="noopener noreferrer">
+      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0736584524001698-gr2.jpg"
+           loading="lazy"
+           onerror="this.onerror=null;this.src='https://ars.els-cdn.com/content/image/1-s2.0-S0736584524001698-gr1.jpg';"
+           alt="Paper figure from the robotized CFRP defect detection and in-situ repair study" />
+    </a>
+    <figcaption><strong>Real-time defect detection and robotized in-situ repair</strong><br />Robotics and Computer-Integrated Manufacturing, 2025. Thermal inspection identifies delamination, wrinkle and impurity defects, and the robot executes defect-specific repair actions.</figcaption>
+  </figure>
+
+  <figure>
+    <a href="https://doi.org/10.1016/j.compscitech.2025.111054" target="_blank" rel="noopener noreferrer">
+      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0266353825000223-ga1_lrg.jpg"
+           loading="lazy"
+           onerror="this.onerror=null;this.src='https://ars.els-cdn.com/content/image/1-s2.0-S0266353825000223-gr1.jpg';"
+           alt="Graphical abstract from the CFRP post-impact residual property prediction paper" />
+    </a>
+    <figcaption><strong>Multi-task prediction of post-impact residual properties</strong><br />Composites Science and Technology, 2025. Surface morphology and dent features are fused to predict absorbed energy and residual compressive properties.</figcaption>
+  </figure>
+
+  <figure>
+    <a href="https://doi.org/10.1016/j.compositesa.2025.109403" target="_blank" rel="noopener noreferrer">
+      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1359835X25006980-ga1_lrg.jpg"
+           loading="lazy"
+           onerror="this.onerror=null;this.src='https://ars.els-cdn.com/content/image/1-s2.0-S1359835X25006980-gr1.jpg';"
+           alt="Paper figure from the deep reinforcement learning based CFRP patch bonding repair study" />
+    </a>
+    <figcaption><strong>Deep reinforcement learning for patch-bonding repair</strong><br />Composites Part A, first published online in 2025. DRL optimizes patch placement sequence, while surface pretreatment improves the bonding and impact-repair performance.</figcaption>
+  </figure>
 </div>
-<p style="font-size:small;color:#777;">The galleries emphasize robot experiments and system-level workflows; linked papers contain the full experimental figures and quantitative results.</p>
+
+<p style="font-size:small;color:#777;">The images above are linked to figures hosted with the corresponding publisher records; if a publisher image cannot be loaded, the page falls back to another figure from the same paper or a clearly labeled local schematic.</p>
 <hr style="clear:both;" />
 <h2 id="grasp-planning"><strong>Grasp Planning</strong></h2>
 
