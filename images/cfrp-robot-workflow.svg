@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="t d">
+<title id="t">Robotized CFRP layup and in-situ repair</title>
+<desc id="d">Illustrative dual-robot workflow showing composite patch placement, thermal inspection and robot repair.</desc>
+<rect width="720" height="360" fill="#f6f7f5"/>
+<text x="24" y="30" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#344d49">Robotized CFRP layup · inspect · repair</text>
+<text x="24" y="52" font-family="Arial,sans-serif" font-size="11" fill="#71807b">Illustrative workflow based on the published robotic composite-manufacturing studies</text>
+
+<g transform="translate(15,65)">
+  <rect x="0" y="0" width="215" height="235" rx="8" fill="#fff" stroke="#d8dfdc"/>
+  <text x="16" y="25" font-family="Arial" font-size="12" font-weight="700" fill="#3f5b54">01 · DUAL-ARM LAYUP</text>
+  <rect x="35" y="168" width="145" height="18" rx="4" fill="#b7c8c1"/>
+  <g stroke="#476c64" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38 77L76 97L98 132"/>
+    <path d="M179 73L147 96L123 132"/>
+  </g>
+  <g fill="#dbe5e1" stroke="#476c64" stroke-width="3">
+    <circle cx="76" cy="97" r="11"/><circle cx="147" cy="96" r="11"/>
+  </g>
+  <rect x="88" y="136" width="41" height="20" rx="4" fill="#c66d4c"/>
+  <path d="M109 156v18" stroke="#c66d4c" stroke-width="3"/>
+  <text x="28" y="214" font-family="Arial" font-size="10" fill="#697a74">pick · heat · place</text>
+</g>
+
+<g transform="translate(252,65)">
+  <rect x="0" y="0" width="215" height="235" rx="8" fill="#fff" stroke="#d8dfdc"/>
+  <text x="16" y="25" font-family="Arial" font-size="12" font-weight="700" fill="#3f5b54">02 · THERMAL INSPECTION</text>
+  <rect x="34" y="171" width="150" height="16" rx="4" fill="#b7c8c1"/>
+  <g stroke="#476c64" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M46 78L83 103L107 138"/>
+  </g>
+  <circle cx="83" cy="103" r="11" fill="#dbe5e1" stroke="#476c64" stroke-width="3"/>
+  <rect x="92" y="132" width="34" height="26" rx="4" fill="#354d4a"/>
+  <rect x="141" y="70" width="45" height="35" rx="5" fill="#263c39"/>
+  <g fill="#e58b54"><circle cx="151" cy="82" r="5"/><circle cx="166" cy="87" r="7"/><circle cx="175" cy="77" r="4"/></g>
+  <path d="M160 107L126 151" stroke="#d36a48" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="28" y="214" font-family="Arial" font-size="10" fill="#697a74">detect wrinkle · delamination · impurity</text>
+</g>
+
+<g transform="translate(489,65)">
+  <rect x="0" y="0" width="215" height="235" rx="8" fill="#fff" stroke="#d8dfdc"/>
+  <text x="16" y="25" font-family="Arial" font-size="12" font-weight="700" fill="#3f5b54">03 · ROBOT REPAIR</text>
+  <rect x="34" y="171" width="150" height="16" rx="4" fill="#b7c8c1"/>
+  <g stroke="#476c64" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M45 78L88 98L121 132"/>
+  </g>
+  <circle cx="88" cy="98" r="11" fill="#dbe5e1" stroke="#476c64" stroke-width="3"/>
+  <rect x="111" y="126" width="38" height="23" rx="5" fill="#c66d4c"/>
+  <circle cx="139" cy="154" r="15" fill="#e4b18e" stroke="#c66d4c" stroke-width="3"/>
+  <path d="M139 169v15" stroke="#c66d4c" stroke-width="3"/>
+  <text x="28" y="214" font-family="Arial" font-size="10" fill="#697a74">force · path · heat · repair mode</text>
+</g>
+<path d="M231 181h18M468 181h18" stroke="#a76147" stroke-width="3"/>
+<path d="M244 176l7 5-7 5M481 176l7 5-7 5" fill="none" stroke="#a76147" stroke-width="2"/>
+<text x="24" y="338" font-family="Arial" font-size="10" fill="#8b7b72">Conceptual illustration — linked papers contain the original experimental figures.</text>
+</svg>
