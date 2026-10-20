@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 160" role="img" aria-labelledby="t d">
+<title id="t">Miniature magnetic gripper</title><desc id="d">Compact technical illustration of a miniature magnetic gripper approaching a small object.</desc>
+<rect width="260" height="160" fill="#f6f7f5"/>
+<g fill="none" stroke="#56746f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M48 39h44v29l28 18"/><path d="M212 39h-44v29l-28 18"/>
+</g>
+<g fill="#dae5e2" stroke="#56746f" stroke-width="3"><rect x="104" y="77" width="52" height="43" rx="8"/></g>
+<g fill="#b5654a"><circle cx="121" cy="91" r="6"/><circle cx="139" cy="91" r="6"/></g>
+<path d="M130 121v20" stroke="#b5654a" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="14" y="22" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#405550">ICRA 2024 · MINIATURE MAGNETIC GRIPPER</text>
+<text x="14" y="151" font-family="Arial,sans-serif" font-size="9" fill="#7a8580">illustrative thumbnail</text>
+</svg>
