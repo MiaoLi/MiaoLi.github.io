@@ -127,57 +127,65 @@
 <li><strong>Work together — multi-robot coordination and embodied systems.</strong> Cooperative manipulation, human-robot collaboration, task-level reasoning and coordinated operation of robot platforms for complex practical tasks.</li>
 </ul>
 
-<div class="lasm-vision" style="max-width:760px;margin:20px auto 28px;border:1px solid #dfeaf1;background:linear-gradient(135deg,#f9fcff,#eef8ff 55%,#f8f4ff);border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(47,98,140,.10);">
-<svg viewBox="0 0 920 470" role="img" aria-label="LASM research directions: grasp stable, manipulate well, and work together" style="display:block;width:100%;height:auto;">
-  <defs>
-    <linearGradient id="centerFill" x1="0" x2="1">
-      <stop offset="0%" stop-color="#dff7ff"/>
-      <stop offset="100%" stop-color="#ece8ff"/>
-    </linearGradient>
-    <linearGradient id="lineGrad" x1="0" x2="1">
-      <stop offset="0%" stop-color="#45cde8"/>
-      <stop offset="100%" stop-color="#8c7cf4"/>
-    </linearGradient>
-  </defs>
+<div class="lasm-vision" style="max-width:720px;margin:22px auto 30px;padding:18px 18px 22px;background:linear-gradient(135deg,#fbfdff,#f3f9fc 55%,#fff9f3);border:1px solid #e5edf2;border-radius:22px;box-shadow:0 12px 32px rgba(42,86,116,.10);">
+  <style>
+    .lasm-map{position:relative;display:grid;grid-template-columns:1fr 150px 1fr;grid-template-rows:auto 105px;gap:14px;align-items:center;}
+    .lasm-scene{position:relative;margin:0;overflow:hidden;border-radius:18px;background:#fff;border:1px solid #e6edf1;box-shadow:0 8px 20px rgba(44,83,109,.10);}
+    .lasm-scene img{width:100%;height:180px;display:block;object-fit:cover;}
+    .lasm-scene figcaption{position:absolute;left:10px;right:10px;bottom:10px;padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.90);backdrop-filter:blur(5px);font-size:12px;line-height:1.35;color:#36515f;}
+    .lasm-scene strong{display:block;font-size:15px;color:#183b4a;margin-bottom:2px;}
+    .lasm-core{grid-column:2;grid-row:1 / 3;z-index:3;width:132px;height:132px;margin:auto;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;background:radial-gradient(circle at 35% 30%,#ffffff 0,#eaf8ff 46%,#efeaff 100%);border:3px solid #83cfe3;box-shadow:0 0 0 10px rgba(125,205,225,.12),0 10px 26px rgba(53,106,137,.16);}
+    .lasm-core b{font-size:34px;letter-spacing:1px;color:#234e63;}
+    .lasm-core span{font-size:10px;color:#688794;letter-spacing:1.2px;margin-top:3px;}
+    .lasm-left{grid-column:1;grid-row:1;transform:rotate(-1.5deg);}
+    .lasm-right{grid-column:3;grid-row:1;transform:rotate(1.5deg);}
+    .lasm-bottom{grid-column:1 / 4;grid-row:2;width:52%;justify-self:center;transform:translateY(-3px);}
+    .lasm-bottom img{height:105px;}
+    .lasm-bottom figcaption{position:absolute;display:flex;align-items:center;justify-content:space-between;gap:8px;}
+    .lasm-line{position:absolute;z-index:1;height:2px;background:linear-gradient(90deg,#69cfe5,#9a86ef);opacity:.55;transform-origin:left center;}
+    .lasm-line.l1{width:105px;left:27%;top:41%;transform:rotate(8deg);}
+    .lasm-line.l2{width:105px;right:27%;top:41%;transform:rotate(172deg);}
+    .lasm-line.l3{width:82px;left:50%;top:58%;transform:rotate(90deg);}
+    .lasm-note{text-align:center;margin-top:14px;font-size:12px;color:#6e8088;letter-spacing:.2px;}
+    @media(max-width:700px){
+      .lasm-map{grid-template-columns:1fr;grid-template-rows:auto;}
+      .lasm-left,.lasm-right,.lasm-bottom,.lasm-core{grid-column:1;grid-row:auto;transform:none;width:auto;}
+      .lasm-core{width:112px;height:112px;order:-1;margin:4px auto;}
+      .lasm-scene img,.lasm-bottom img{height:160px;}
+      .lasm-line{display:none;}
+    }
+  </style>
 
-  <rect width="920" height="470" fill="#fafdff"/>
-  <circle cx="460" cy="233" r="86" fill="url(#centerFill)" stroke="#7ccfe2" stroke-width="3"/>
-  <circle cx="460" cy="233" r="70" fill="#ffffff" opacity=".82"/>
-  <text x="460" y="248" text-anchor="middle" fill="#26526a" font-size="54" font-weight="700" font-family="Arial, Helvetica, sans-serif">LASM</text>
+  <div class="lasm-map">
+    <span class="lasm-line l1"></span>
+    <span class="lasm-line l2"></span>
+    <span class="lasm-line l3"></span>
 
-  <path d="M376 214 C320 192,292 175,250 160" fill="none" stroke="url(#lineGrad)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M544 214 C600 192,628 175,670 160" fill="none" stroke="url(#lineGrad)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M460 319 C460 345,460 360,460 382" fill="none" stroke="url(#lineGrad)" stroke-width="4" stroke-linecap="round"/>
+    <figure class="lasm-scene lasm-left">
+      <img src="/images/tactilepalm.png" alt="Tactile sensing and grasp adaptation research" />
+      <figcaption><strong>Grasp Stable</strong>tactile sensing · grasp stability · contact adaptation</figcaption>
+    </figure>
 
-  <g>
-    <rect x="55" y="70" width="270" height="150" rx="24" fill="#e9fbff" stroke="#72d9eb" stroke-width="2"/>
-    <circle cx="105" cy="115" r="24" fill="#c7f3fa"/>
-    <path d="M91 123 C103 102,118 101,130 122 M96 132 L111 115 L126 132" fill="none" stroke="#2aaec6" stroke-width="4" stroke-linecap="round"/>
-    <text x="145" y="110" fill="#1e5665" font-size="27" font-weight="700" font-family="Arial, Helvetica, sans-serif">Grasp Stable</text>
-    <text x="145" y="143" fill="#4f7480" font-size="17" font-family="Arial, Helvetica, sans-serif">Robust grasping</text>
-    <text x="145" y="170" fill="#4f7480" font-size="17" font-family="Arial, Helvetica, sans-serif">Tactile sensing</text>
-    <text x="145" y="197" fill="#4f7480" font-size="17" font-family="Arial, Helvetica, sans-serif">Contact adaptation</text>
-  </g>
+    <div class="lasm-core">
+      <b>LASM</b>
+      <span>DEXTEROUS ROBOTICS</span>
+    </div>
 
-  <g>
-    <rect x="595" y="70" width="270" height="150" rx="24" fill="#f1edff" stroke="#a99bf5" stroke-width="2"/>
-    <circle cx="645" cy="115" r="24" fill="#ddd5ff"/>
-    <path d="M632 126 L642 109 L651 117 L660 101" fill="none" stroke="#7567d8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="685" y="110" fill="#51457c" font-size="27" font-weight="700" font-family="Arial, Helvetica, sans-serif">Manipulate Well</text>
-    <text x="685" y="143" fill="#746b94" font-size="17" font-family="Arial, Helvetica, sans-serif">Embodied learning</text>
-    <text x="685" y="170" fill="#746b94" font-size="17" font-family="Arial, Helvetica, sans-serif">VLA policies</text>
-    <text x="685" y="197" fill="#746b94" font-size="17" font-family="Arial, Helvetica, sans-serif">Contact-rich skills</text>
-  </g>
+    <figure class="lasm-scene lasm-right">
+      <img src="https://raw.githubusercontent.com/xtli12/RGMP/main/figs/Human-robot_interaction.gif"
+           onerror="this.onerror=null;this.src='/images/graspada.png'"
+           alt="Humanoid manipulation and embodied learning research" />
+      <figcaption><strong>Manipulate Well</strong>VLA · embodied learning · contact-rich skills</figcaption>
+    </figure>
 
-  <g>
-    <rect x="315" y="365" width="290" height="80" rx="22" fill="#fff5e8" stroke="#f0bd73" stroke-width="2"/>
-    <circle cx="360" cy="405" r="20" fill="#ffe2b8"/>
-    <circle cx="352" cy="402" r="5" fill="#d28a2f"/><circle cx="368" cy="402" r="5" fill="#a56fd6"/>
-    <path d="M345 418 C355 410,365 410,375 418" fill="none" stroke="#9b6d4d" stroke-width="3" stroke-linecap="round"/>
-    <text x="400" y="399" fill="#7c5a34" font-size="26" font-weight="700" font-family="Arial, Helvetica, sans-serif">Work Together</text>
-    <text x="400" y="425" fill="#8f7458" font-size="16" font-family="Arial, Helvetica, sans-serif">Human–robot & multi-robot collaboration</text>
-  </g>
-</svg>
+    <figure class="lasm-scene lasm-bottom">
+      <img src="https://raw.githubusercontent.com/xtli12/Co-policy/main/figs/Co-create/Semantic3x.gif"
+           onerror="this.onerror=null;this.src='/images/bimanual-exploration.PNG'"
+           alt="Human robot and multi-robot collaboration research" />
+      <figcaption><strong>Work Together</strong><span>human–robot · multi-robot collaboration</span></figcaption>
+    </figure>
+  </div>
+  <div class="lasm-note">Three linked directions toward general-purpose dexterous robot intelligence</div>
 </div>
 
 <p style="text-align:justify;">Recent experimental platforms include the <strong>Tianwen</strong> and <strong>Yuanyou</strong> humanoid robots, tactile-enabled dexterous hands, and autonomous tool-use systems. In August 2026, the Wuhan University–AGIBOT team demonstrated fully autonomous powder weighing and won the dexterous-hand event at the World Humanoid Robot Games (<a href="https://news.whu.edu.cn/info/2301/501497.htm">university report</a>).</p>
