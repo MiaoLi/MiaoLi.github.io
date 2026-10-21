@@ -140,57 +140,35 @@
 @media(max-width:720px){.research-gallery{grid-template-columns:1fr 1fr}.research-gallery img{height:155px}}
 @media(max-width:480px){.research-gallery{grid-template-columns:1fr}.research-gallery img{height:auto}}
 </style>
+<style>
+.rep-papers{margin:12px 0 22px;padding:11px 14px;border-left:3px solid #777;background:#fafafa;font-size:12px;line-height:1.7;color:#555;}
+.rep-papers strong{color:#333;}
+.rep-papers a{font-weight:600;}
+.rep-papers .venue{white-space:nowrap;color:#8a5a2b;font-weight:700;}
+</style>
 
 <h2 id="vla-research"><strong>Vision-Language-Action (VLA) Models and Embodied Robot Learning</strong></h2>
 <p style="text-align:justify;">A major focus of our recent work is bridging high-level visual-language understanding with robust, data-efficient robot actions. In <strong>RGMP</strong> (AAAI 2026), a geometric-prior skill selector connects natural-language commands, object shape and spatial relations to executable grasping skills, while an adaptive recursive policy learns robot motion from limited demonstrations. We are extending this direction toward multimodal VLA learning, in-context imitation, human–robot co-creation and robustness of robotic foundation policies. <a href="https://doi.org/10.1609/aaai.v40i18.38539">[AAAI 2026 paper]</a> <a href="https://arxiv.org/abs/2609.07581">[ICI-VLA]</a> <a href="https://github.com/xtli12/RGMP">[RGMP project]</a></p>
+<div class="rep-papers"><strong>Representative papers:</strong>
+<a href="https://doi.org/10.1609/aaai.v40i18.38539">RGMP: Recurrent Geometric-prior Multimodal Policy for Generalizable Humanoid Robot Manipulation</a> — <span class="venue">AAAI 2026</span>;
+<a href="https://arxiv.org/abs/2602.03153">When Attention Betrays: Erasing Backdoor Attacks in Robotic Policies by Reconstructing Visual Tokens</a> — <span class="venue">ICRA 2026</span>;
+<a href="https://doi.org/10.1360/SST-2025-0312">Adaptive Dexterous Manipulation for Humanoid Robots via a Guided Tactile Multimodal Foundation Model</a> — <span class="venue">Sci. Sin. Tech. 2026</span>.
+</div>
 <div class="research-gallery">
   <figure><a href="https://github.com/xtli12/RGMP"><img src="https://raw.githubusercontent.com/xtli12/RGMP/main/figs/Human-robot_interaction.gif" loading="lazy" onerror="this.onerror=null;this.src='/images/graspada.png'" alt="RGMP humanoid robot human-robot interaction experiment" /></a><figcaption>Real humanoid interaction from the RGMP project.</figcaption></figure>
   <figure><a href="https://github.com/xtli12/RGMP"><img src="https://raw.githubusercontent.com/xtli12/RGMP/main/figs/Generalization_grasping.gif" loading="lazy" onerror="this.onerror=null;this.src='/images/posefusion.png'" alt="RGMP humanoid robot generalization grasping experiment" /></a><figcaption>Generalization to new objects and scenes.</figcaption></figure>
   <figure><a href="https://github.com/xtli12/Co-policy"><img src="https://raw.githubusercontent.com/xtli12/Co-policy/main/figs/Co-create/Semantic3x.gif" loading="lazy" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Humanoid robot music co-creation experiment in Co-policy" /></a><figcaption>Co-policy: responsive human–robot co-creation as another VLA-style embodied task.</figcaption></figure>
 </div>
 
-<h2 id="composite-layup"><strong>Robotic Composite Manufacturing, Inspection and Repair</strong></h2>
-<p style="text-align:justify;">Our composite-material research connects <strong>robotic layup planning</strong>, <strong>automated fiber placement</strong>, and <strong>online defect detection and in-situ repair</strong>. To keep the page visually focused, the representative images are presented in one single row.</p>
 
-<div class="research-gallery composite-paper-gallery" style="grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:12px;">
-  <figure>
-    <a href="https://commons.wikimedia.org/wiki/File:Automated_Fibre_Placement_Robot.jpg" target="_blank" rel="noopener noreferrer">
-      <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Automated_Fibre_Placement_Robot.jpg?width=1200"
-           loading="lazy"
-           alt="Industrial robot performing automated fibre placement"
-           style="height:220px;object-fit:cover;" />
-    </a>
-    <figcaption><strong>Automated fibre placement in industry</strong><br />A real robotic AFP system laying composite material on complex tooling.</figcaption>
-  </figure>
-
-  <figure>
-    <a href="https://doi.org/10.1016/j.engappai.2024.108518" target="_blank" rel="noopener noreferrer">
-      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0952197624006766-gr1.jpg"
-           loading="lazy"
-           onerror="this.onerror=null;this.src='/images/cfrp-robot-workflow.svg'"
-           alt="Dual-arm collaborative composite layup research system"
-           style="height:220px;object-fit:cover;" />
-    </a>
-    <figcaption><strong>Dual-arm fiber patch placement</strong><br />Temperature-aware planning for collaborative robotic composite layup.</figcaption>
-  </figure>
-
-  <figure>
-    <a href="https://doi.org/10.1016/j.rcim.2024.102882" target="_blank" rel="noopener noreferrer">
-      <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0736584524001698-gr2.jpg"
-           loading="lazy"
-           onerror="this.onerror=null;this.src='https://ars.els-cdn.com/content/image/1-s2.0-S0736584524001698-gr1.jpg';"
-           alt="Robotized CFRP defect detection and in-situ repair experiment"
-           style="height:220px;object-fit:cover;" />
-    </a>
-    <figcaption><strong>Detection and in-situ repair</strong><br />Robotized inspection and defect-specific repair for CFRP manufacturing.</figcaption>
-  </figure>
-</div>
-
-<p style="font-size:small;color:#777;">Representative work spans robotic layup, path planning, inspection and repair. Click an image to open its source or paper.</p>
-<hr style="clear:both;" />
 <h2 id="grasp-planning"><strong>Grasp Planning</strong></h2>
 
 <p style="text-align:justify;"> Choosing an optimal grasp for a given object is one of the core problems in robotic grasping. The optimality is constrained by the hand kinematics, task at hand and the object properties (shape, dynamics, friction, etc.). In this research, we study how the hand kinematics, object shape and task requirements influence the grasp planning process. This part includes traditional model-based planning as well as learning-based approaches.</p>
+<div class="rep-papers"><strong>Representative papers:</strong>
+<a href="https://doi.org/10.1109/IROS.2012.6386114">Bridging the Gap: One Shot Grasp Synthesis Approach</a> — <span class="venue">IROS 2012</span>;
+<a href="https://doi.org/10.1109/ROBIO.2016.7866383">Learning Partial Power Grasp with Task-specific Contact</a> — <span class="venue">ROBIO 2016</span>;
+<a href="https://doi.org/10.1109/ICRA.2016.7487183">On the Evolution of Fingertip Grasping Manifolds</a> — <span class="venue">ICRA 2016</span>.
+</div>
 
 <h3 id="one-shot-grasp-planning">One Shot Grasp Planning</h3>
 
@@ -233,6 +211,11 @@ using a 16 DOF robotic hand – Allegro Hand, on a variety of tool-using tasks.<
 
 <p style="text-align:justify;">For a long time, the robotic grasping community focuses too much on the grasp planning part. However, for real world applications, it is important to know whether the planned grasp is stable or not. In this research, we study how to predict the stability of a given grasp with trained grasping experience from the perspective of the grasped object. With the learned stability estimator, if a grasp is predicted as unstable, we devise an adaptation strategy to stabilize the given grasp. Moreover, to close the loop between initial planning and the adaptation process, we design a closed-loop adaptation strategy to stabilize the grasp in real-time while keep the hand grasp capability in mind.
 </p>
+<div class="rep-papers"><strong>Representative papers:</strong>
+<a href="https://doi.org/10.1109/IROS.2014.6943027">Learning of Grasp Adaptation through Experience and Tactile Sensing</a> — <span class="venue">IROS 2014</span>;
+<a href="https://doi.org/10.1109/ICRA.2014.6907866">Learning Object-level Impedance Control for Robust Grasping and Dexterous Manipulation</a> — <span class="venue">ICRA 2014</span>;
+<a href="https://doi.org/10.1177/0278364914559752">Hierarchical Fingertip Space: A Unified Framework for Grasp Planning and In-hand Grasp Adaptation</a> — <span class="venue">IJRR 2016</span>.
+</div>
 
 <h3 id="learning-grasp-stability">Learning Object-level Impedance Control</h3>
 <div class="pull-right" style="width: 300px; margin-right: 0px;">
@@ -289,6 +272,11 @@ conducted on an Allegro hand mounted on a Kuka LWR arm.</p>
 <h2 id="compliant-manipulation"><strong>Compliant Manipulation</strong></h2>
 
 <p style="text-align:justify;">Object manipulation is a challenging task for robotics, as the physics involved in object interaction is complex and hard to express analytically. Extended from the robotic grasping research, in this research we study the underlying interaction model between the object and the environment. To enable robust physical interaction with the environment, different models have been investigated to represent the task at hand, including modular approach, manifold learning, etc. To facilitate the model learning process, we adopt the learning from demonstration framework where the data collected from demonstration are used from model training. </p>
+<div class="rep-papers"><strong>Representative papers:</strong>
+<a href="https://doi.org/10.1007/s10514-015-9434-0">A Modular Approach to Learning Manipulation Strategies from Human Demonstration</a> — <span class="venue">Auton. Robots 2016</span>;
+<a href="https://doi.org/10.1007/s10514-017-9641-3">Learning Task Manifolds for Constrained Object Manipulation</a> — <span class="venue">Auton. Robots 2018</span>;
+<a href="https://doi.org/10.1155/2019/5262859">Learning Force-relevant Skills from Human Demonstration</a> — <span class="venue">Complexity 2019</span>.
+</div>
 
 <h3 id="modular-approach"> Learning Manipulation Strategies from Human Demonstration</h3>
 
@@ -332,6 +320,11 @@ the learned skill model is further integrated with an adaptive controller that o
   <p><img src="/images/polishing.PNG" alt="Visualization of force-based-skill." /></p> -->
 
 <h2 id="recent-works"><strong>Recent Works</strong></h2>
+<div class="rep-papers"><strong>Representative papers:</strong>
+A Biomimetic Tactile Palm for Robotic Object Manipulation — <span class="venue">RA-L 2022</span>;
+Learning Ultrasound Scanning Skills from Human Demonstrations — <span class="venue">Sci. China Inf. Sci. 2021</span>;
+Learning Freehand Ultrasound Through Multimodal Representation and Skill Adaptation — <span class="venue">T-ASE 2025</span>.
+</div>
 
 <!-- <p style="text-align:justify;">Recent Works.
 </p> -->
