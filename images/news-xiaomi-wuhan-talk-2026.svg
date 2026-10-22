@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff7ef"/>
+      <stop offset="1" stop-color="#f3f8ff"/>
+    </linearGradient>
+    <linearGradient id="arm" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff8a34"/>
+      <stop offset="1" stop-color="#5b8ff9"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="420" rx="28" fill="url(#bg)"/>
+  <circle cx="90" cy="76" r="34" fill="#ff6900"/>
+  <text x="90" y="88" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="white">MI</text>
+  <text x="145" y="72" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#263746">Xiaomi Wuhan</text>
+  <text x="145" y="103" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#647482">Oct 22, 2026</text>
+  <text x="56" y="172" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700" fill="#213547">Humanoid Robot</text>
+  <text x="56" y="214" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700" fill="#213547">Dexterous Manipulation</text>
+  <text x="56" y="258" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#6a7782">Grasping · Tactile Sensing · Contact-rich Skills</text>
+
+  <g transform="translate(470 155)" stroke="url(#arm)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 160 L80 105 L125 125 L170 70"/>
+    <circle cx="20" cy="160" r="16" fill="#fff" stroke="#ff8a34"/>
+    <circle cx="80" cy="105" r="15" fill="#fff" stroke="#e68b4c"/>
+    <circle cx="125" cy="125" r="14" fill="#fff" stroke="#8b94cc"/>
+    <circle cx="170" cy="70" r="13" fill="#fff" stroke="#5b8ff9"/>
+    <path d="M170 70 l28 -18 M170 70 l30 4 M170 70 l18 28"/>
+  </g>
+  <rect x="54" y="320" width="610" height="1" fill="#d8e2ea"/>
+  <text x="56" y="356" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#405363">Talk at Xiaomi Wuhan Headquarters</text>
+  <text x="56" y="384" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#7a8791">Humanoid dexterous manipulation and embodied intelligence</text>
+</svg>
