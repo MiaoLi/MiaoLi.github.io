@@ -119,20 +119,67 @@
 <p style="text-align:justify;">Our applied work follows a simple path: collect richer physical-interaction data, learn robust manipulation skills, and deploy them in real environments. Recent systems span the Tianwen/Yuanyou humanoid platforms, HandX tactile-data infrastructure, and healthcare-oriented robotic systems.</p>
 
 <style>
-.app-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0 22px;}
+.app-photo-grid,
+.tianwen-grid{
+  display:grid;
+  gap:14px;
+  margin:16px 0 26px;
+  align-items:stretch;
+}
+.app-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
 .app-photo-grid.three{grid-template-columns:repeat(3,minmax(0,1fr));}
-.tianwen-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0 24px;}
-.tianwen-grid .app-photo-card{display:flex;flex-direction:column;height:100%;}
-.tianwen-grid .app-photo-card img{height:220px;object-fit:cover;}
-.tianwen-grid .app-photo-card figcaption{min-height:44px;display:flex;align-items:center;}
-@media(max-width:700px){.tianwen-grid{grid-template-columns:1fr}.tianwen-grid .app-photo-card img{height:auto}.tianwen-grid .app-photo-card figcaption{min-height:0}}
-.app-photo-card{margin:0;border:1px solid #e5e5e5;background:#fafafa;padding:6px;}
-.app-photo-card img{width:100%;height:195px;display:block;object-fit:cover;background:#f2f2f2;}
-.app-photo-card figcaption{font-size:11px;color:#666;line-height:1.45;padding:6px 3px 2px;}
-.app-specs{background:#f8f8f8;border-left:3px solid #999;padding:10px 14px;margin:12px 0 18px;}
+.tianwen-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+
+.app-photo-card{
+  margin:0;
+  border:1px solid #e4e8eb;
+  background:#fff;
+  padding:6px;
+  border-radius:10px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  box-shadow:0 3px 12px rgba(25,50,70,.05);
+}
+.app-photo-card > a{display:block;}
+.app-photo-card img{
+  width:100%;
+  height:210px;
+  display:block;
+  object-fit:cover;
+  background:#f2f2f2;
+  border-radius:6px;
+}
+.app-photo-card figcaption{
+  font-size:11px;
+  color:#666;
+  line-height:1.45;
+  padding:8px 5px 5px;
+  min-height:48px;
+  flex:1;
+}
+.tianwen-grid .app-photo-card img{height:220px;}
+
+.app-specs{
+  background:#f8f8f8;
+  border-left:3px solid #999;
+  padding:10px 14px;
+  margin:12px 0 18px;
+}
 .app-specs li{margin:5px 0;}
-@media(max-width:700px){.app-photo-grid,.app-photo-grid.three{grid-template-columns:1fr 1fr}.app-photo-card img{height:150px}}
-@media(max-width:480px){.app-photo-grid,.app-photo-grid.three{grid-template-columns:1fr}.app-photo-card img{height:auto}}
+
+@media(max-width:760px){
+  .app-photo-grid.three{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:620px){
+  .app-photo-grid,
+  .app-photo-grid.three,
+  .tianwen-grid{grid-template-columns:1fr;}
+  .app-photo-card img,
+  .tianwen-grid .app-photo-card img{height:auto;max-height:320px;}
+  .app-photo-card figcaption{min-height:0;}
+}
 </style>
 
 <h2 id="tianwen-humanoid">Tianwen / Yuanyou Humanoid Robots</h2>
@@ -157,29 +204,26 @@
 </ul>
 </div>
 <p style="text-align:justify;">This direction is closely connected to our research on learning from human demonstrations: the goal is to preserve the hidden contact information in actions such as squeezing, sliding, inserting, rotating and handling fragile objects. HandX has also explored extending the same tactile platform toward pulse sensing and other physical-interaction measurements. <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><strong>HandX official website</strong></a>. <a href="https://www.jiemian.com/article/14844706.html">[Detailed HandX product article]</a> <a href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202609/t20260930_2855901.html">[Wuhan manufacturing and deployment report]</a></p>
-<div class="app-photo-grid three" style="align-items:stretch;">
-  <figure class="app-photo-card" style="grid-column:1 / -1;">
-    <img src="https://hbrbapp.hubeidaily.net/4b805789a3c14ffa828438c048d01bff.jpeg"
+<div class="app-photo-grid three">
+  <figure class="app-photo-card">
+    <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://hbrbapp.hubeidaily.net/4b805789a3c14ffa828438c048d01bff.jpeg"
          referrerpolicy="no-referrer"
          onerror="this.onerror=null;this.src='https://img.jiemian.com/101/original/20260729/import_1785313150454120250010.jpg'"
-         alt="HANDX tactile glove system and wearable data collection setup"
-         style="height:330px;object-fit:cover;" /></a>
+         alt="HANDX tactile glove system and wearable data collection setup" /></a>
     <figcaption><strong>HandX tactile-data system</strong> — a more complete view of the wearable glove, sensing hardware and data-collection setup used for embodied-intelligence demonstrations.</figcaption>
   </figure>
   <figure class="app-photo-card">
-    <img src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250010.jpg"
+    <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250010.jpg"
          referrerpolicy="no-referrer"
          onerror="this.onerror=null;this.src='/images/handx-tactile-demo.svg'"
-         alt="HandX fabric tactile glove worn during physical interaction"
-         style="height:220px;object-fit:cover;" /></a>
+         alt="HandX fabric tactile glove worn during physical interaction" /></a>
     <figcaption>Wearable tactile sensing during natural human physical interaction.</figcaption>
   </figure>
-  <figure class="app-photo-card" style="grid-column:span 2;">
-    <img src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250013.jpg"
+  <figure class="app-photo-card">
+    <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250013.jpg"
          referrerpolicy="no-referrer"
          onerror="this.onerror=null;this.src='/images/handx-tactile-demo.svg'"
-         alt="HandX multimodal tactile data collection workflow"
-         style="height:220px;object-fit:cover;" /></a>
+         alt="HandX multimodal tactile data collection workflow" /></a>
     <figcaption>Multimodal collection workflow: tactile signals synchronized with cameras and motion tracking for robot-learning datasets.</figcaption>
   </figure>
 </div>
