@@ -121,6 +121,11 @@
 <style>
 .app-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0 22px;}
 .app-photo-grid.three{grid-template-columns:repeat(3,minmax(0,1fr));}
+.tianwen-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0 24px;}
+.tianwen-grid .app-photo-card{display:flex;flex-direction:column;height:100%;}
+.tianwen-grid .app-photo-card img{height:220px;object-fit:cover;}
+.tianwen-grid .app-photo-card figcaption{min-height:44px;display:flex;align-items:center;}
+@media(max-width:700px){.tianwen-grid{grid-template-columns:1fr}.tianwen-grid .app-photo-card img{height:auto}.tianwen-grid .app-photo-card figcaption{min-height:0}}
 .app-photo-card{margin:0;border:1px solid #e5e5e5;background:#fafafa;padding:6px;}
 .app-photo-card img{width:100%;height:195px;display:block;object-fit:cover;background:#f2f2f2;}
 .app-photo-card figcaption{font-size:11px;color:#666;line-height:1.45;padding:6px 3px 2px;}
@@ -132,7 +137,7 @@
 
 <h2 id="tianwen-humanoid">Tianwen / Yuanyou Humanoid Robots</h2>
 <p style="text-align:justify;">The Tianwen family provides a real platform for studying human–robot interaction, dexterous grasping, tool use and embodied foundation models. Public demonstrations have progressed from handshaking and microphone delivery, to grasping cups and laboratory tools, coffee service, brush calligraphy, and long-horizon autonomous manipulation. These systems connect our academic work in grasping, tactile sensing, VLA models and policy learning to real service environments.</p>
-<div class="app-photo-grid">
+<div class="tianwen-grid">
   <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563669826939.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Tianwen team working on humanoid robot optimization" /><figcaption>Tianwen platform development and system integration.</figcaption></figure>
   <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670173443.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/graspada.png'" alt="Tianwen humanoid robot holding a laboratory tool" /><figcaption>Tool grasping — an example of stable contact and task-aware manipulation.</figcaption></figure>
   <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670490642.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/posefusion.png'" alt="Tianwen humanoid robot grasping a cup" /><figcaption>Everyday-object manipulation on the Tianwen platform.</figcaption></figure>
