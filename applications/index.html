@@ -132,15 +132,15 @@
 
 .app-photo-card{
   margin:0;
-  border:1px solid #e4e8eb;
+  border:1px solid #e3e8ec;
   background:#fff;
-  padding:6px;
-  border-radius:10px;
+  padding:7px;
+  border-radius:12px;
   overflow:hidden;
   display:flex;
   flex-direction:column;
   min-width:0;
-  box-shadow:0 3px 12px rgba(25,50,70,.05);
+  box-shadow:0 4px 14px rgba(25,50,70,.06);
 }
 .app-photo-card > a{display:block;}
 .app-photo-card img{
@@ -148,18 +148,48 @@
   height:210px;
   display:block;
   object-fit:cover;
-  background:#f2f2f2;
-  border-radius:6px;
+  background:#f2f4f6;
+  border-radius:8px;
 }
+.tianwen-grid .app-photo-card img{height:220px;}
 .app-photo-card figcaption{
   font-size:11px;
   color:#666;
   line-height:1.45;
   padding:8px 5px 5px;
-  min-height:48px;
+  min-height:50px;
   flex:1;
 }
-.tianwen-grid .app-photo-card img{height:220px;}
+
+/* Normalize legacy application images below the new sections */
+.post-content picture{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  margin:14px 0 20px;
+}
+.post-content picture img{
+  width:100% !important;
+  height:210px !important;
+  object-fit:cover;
+  margin:0 !important;
+  border-radius:10px;
+  border:1px solid #e3e8ec;
+  background:#f4f6f8;
+}
+.post-content picture figcaption{
+  grid-column:1 / -1;
+  font-size:11px;
+  line-height:1.5;
+  color:#666;
+  margin-top:2px;
+}
+.post-content > img,
+.post-content p > img{
+  max-width:100%;
+  height:auto;
+  border-radius:10px;
+}
 
 .app-specs{
   background:#f8f8f8;
@@ -175,9 +205,14 @@
 @media(max-width:620px){
   .app-photo-grid,
   .app-photo-grid.three,
-  .tianwen-grid{grid-template-columns:1fr;}
+  .tianwen-grid,
+  .post-content picture{grid-template-columns:1fr;}
   .app-photo-card img,
-  .tianwen-grid .app-photo-card img{height:auto;max-height:320px;}
+  .tianwen-grid .app-photo-card img,
+  .post-content picture img{
+    height:auto !important;
+    max-height:320px;
+  }
   .app-photo-card figcaption{min-height:0;}
 }
 </style>
@@ -185,9 +220,9 @@
 <h2 id="tianwen-humanoid">Tianwen / Yuanyou Humanoid Robots</h2>
 <p style="text-align:justify;">The Tianwen family provides a real platform for studying human–robot interaction, dexterous grasping, tool use and embodied foundation models. Public demonstrations have progressed from handshaking and microphone delivery, to grasping cups and laboratory tools, coffee service, brush calligraphy, and long-horizon autonomous manipulation. These systems connect our academic work in grasping, tactile sensing, VLA models and policy learning to real service environments.</p>
 <div class="tianwen-grid">
-  <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563669826939.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Tianwen team working on humanoid robot optimization" /><figcaption>Tianwen platform development and system integration.</figcaption></figure>
-  <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670173443.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/graspada.png'" alt="Tianwen humanoid robot holding a laboratory tool" /><figcaption>Tool grasping — an example of stable contact and task-aware manipulation.</figcaption></figure>
-  <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670490642.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/posefusion.png'" alt="Tianwen humanoid robot grasping a cup" /><figcaption>Everyday-object manipulation on the Tianwen platform.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563669826939.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Tianwen team working on humanoid robot optimization" /><figcaption>Tianwen platform development and system integration.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670173443.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/graspada.png'" alt="Tianwen humanoid robot holding a laboratory tool" /><figcaption>Tool grasping — an example of stable contact and task-aware manipulation.</figcaption></figure>
+  <figure class="app-photo-card"><img src="https://3g.wuhan.gov.cn/sy/whyw/202502/W020250209563670490642.jpeg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/posefusion.png'" alt="Tianwen humanoid robot grasping a cup" /><figcaption>Everyday-object manipulation on the Tianwen platform.</figcaption></figure>
   <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/0941ea26238a4b49abefe60e3a5b4852.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Yuanyou humanoid robot writing Spring Festival couplets" /><figcaption>Yuanyou writing a Spring Festival couplet — sustained grasping and coordinated tool motion.</figcaption></figure>
 </div>
 
@@ -243,9 +278,9 @@
 <p style="text-align:justify;">The system has been demonstrated in a dedicated Optics Valley experience store and reported in multiple hospital and healthcare-related deployments. These examples show engineering deployment and user interaction; they should not be interpreted as claims of clinical efficacy. <a href="https://www.wehdz.gov.cn/2022/ggxw_68627/cydt_68630/202604/t20260408_2750267.shtml">[Optics Valley report]</a> <a href="https://www.ctdsb.net/c1734_202603/2680553.html">[On-site engineering report]</a></p>
 <p style="margin:8px 0 14px;"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><strong>Explore HandX products and company updates on the official website →</strong></a></p>
 <div class="app-photo-grid three">
-  <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/a377d82780fe4b32867695d041416955.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="User receiving robotic moxibustion at the HandX experience store" /><figcaption>Real user experience at the HandX moxibustion service site.</figcaption></figure>
-  <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/1e0bebdfad244cdc9df33e249c817e06.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="HandX engineer adjusting a moxibustion robot" /><figcaption>HandX engineer debugging the moxibustion robot.</figcaption></figure>
-  <figure class="app-photo-card"><img src="https://hbrbapp.hubeidaily.net/b62fffb9500f49f5aff8542c30cc6f60.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="Humanoid robot guiding a customer in the moxibustion experience store" /><figcaption>Humanoid service robot guiding a customer in the experience-store workflow.</figcaption></figure>
+  <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://hbrbapp.hubeidaily.net/a377d82780fe4b32867695d041416955.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="User receiving robotic moxibustion at the HandX experience store" /></a><figcaption>Real user experience at the HandX moxibustion service site.</figcaption></figure>
+  <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://hbrbapp.hubeidaily.net/1e0bebdfad244cdc9df33e249c817e06.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="HandX engineer adjusting a moxibustion robot" /></a><figcaption>HandX engineer debugging the moxibustion robot.</figcaption></figure>
+  <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://hbrbapp.hubeidaily.net/b62fffb9500f49f5aff8542c30cc6f60.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="Humanoid robot guiding a customer in the moxibustion experience store" /></a><figcaption>Humanoid service robot guiding a customer in the experience-store workflow.</figcaption></figure>
 </div>
 
 <h3>Other Application Directions</h3>
@@ -271,10 +306,10 @@
   <html>
   <body>
   <picture>
-  <img src="/images/robot-shop-out.JPG" alt="Robot Retailing Shop" style="width:400px;">
-  <img src="/images/robot-shop.JPG" alt="Robot Retailing Shop" style="width:400px;">
-  <img src="/images/robot-shop-move.GIF" alt="Robot Retailing Shop" style="width:400px;">
-  <img src="/images/robot-small.gif" alt="Robot Retailing Shop" style="width:400px;">
+  <img src="/images/robot-shop-out.JPG" alt="Robot Retailing Shop">
+  <img src="/images/robot-shop.JPG" alt="Robot Retailing Shop">
+  <img src="/images/robot-shop-move.GIF" alt="Robot Retailing Shop">
+  <img src="/images/robot-small.gif" alt="Robot Retailing Shop">
   </picture>
   </body>
   </html>
@@ -316,8 +351,8 @@
 
   <body>
   <picture>
-  <img src="/images/mushroom.JPG" alt="mushroom sorting" style="width:400px;">
-  <img src="/images/mushroom3.png" alt="mushroom sorting" style="width:400px;">
+  <img src="/images/mushroom.JPG" alt="mushroom sorting">
+  <img src="/images/mushroom3.png" alt="mushroom sorting">
    <figcaption>The left figure shows the traditional manual mushroom sorting. The right figure presents several examples to show the features that determine the class of mushroom. The traditional process is quite labor-extensive and it is hard to maintain the quality in terms of classification rate, accuracy, consistency, etc. </figcaption>
   </picture>
   </body>
