@@ -135,13 +135,26 @@ I am teaching several courses for different schools including: Design and Manufa
 .news-current{margin:4px 0 14px;}
 .news-row{display:flex;gap:16px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #e8e8e8;}
 .news-text{flex:1;min-width:0;font-size:14px;line-height:1.5;text-align:left;}
-.news-date{display:block;font-weight:700;color:#555;margin-bottom:2px;}
+.news-date{display:block;font-weight:700;color:#555;margin-bottom:4px;}
+.news-tag{display:inline-block;margin-left:7px;padding:2px 7px;border-radius:999px;font-size:9px;font-weight:800;line-height:1.35;letter-spacing:.55px;vertical-align:1px;border:1px solid transparent;}
+.news-tag.talk{color:#315aa8;background:#eef4ff;border-color:#cad9fb;}
+.news-tag.paper{color:#16705f;background:#eaf8f4;border-color:#c8e9df;}
+.news-tag.product{color:#a45b16;background:#fff3e7;border-color:#f2d2ad;}
+.news-tag.award{color:#8a6511;background:#fff8d9;border-color:#ead78a;}
+.news-tag.media{color:#9b4770;background:#fff0f7;border-color:#efc7dc;}
+.news-tag.demo{color:#7654a6;background:#f4effc;border-color:#dacbf0;}
+.news-tag.education{color:#526273;background:#f1f4f6;border-color:#d8dfe4;}
+.news-tag.startup{color:#167777;background:#eafafa;border-color:#c3e7e7;}
+.news-tag.service{color:#675b4d;background:#f6f2ed;border-color:#ddd2c5;}
+.news-tag.workshop{color:#496b98;background:#edf4fb;border-color:#ccdaea;}
+.news-tag.submission{color:#775d93;background:#f4f0f8;border-color:#ddd2e8;}
 .news-image{flex:0 0 132px;width:132px;height:82px;border:1px solid #e5e5e5;background:#f7f7f7;overflow:hidden;}
 .news-thumb{width:100%;height:100%;display:block;object-fit:cover;}
 .news-thumb.contain{object-fit:contain;background:#fff;}
 .news-archive{margin:10px 0 14px;}
 .news-archive>summary{cursor:pointer;font-weight:600;color:#555;padding:7px 0;}
 .news-legacy{font-size:13px;}
+.news-legacy .news-tag{margin-left:8px;margin-bottom:3px;}
 @media(max-width:600px){
   .news-row{gap:10px;}
   .news-text{font-size:13px;}
@@ -150,55 +163,55 @@ I am teaching several courses for different schools including: Design and Manufa
 </style>
 <div class="news-current">
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2026-10-22</span>I gave a talk at <strong>Xiaomi's Wuhan headquarters</strong> on <strong>humanoid robot dexterous manipulation</strong>, sharing our recent work and perspectives on robust grasping, tactile sensing, contact-rich manipulation and embodied robot learning.</div>
+  <div class="news-text"><span class="news-date">2026-10-22<span class="news-tag talk">TALK</span></span>I gave a talk at <strong>Xiaomi's Wuhan headquarters</strong> on <strong>humanoid robot dexterous manipulation</strong>, sharing our recent work and perspectives on robust grasping, tactile sensing, contact-rich manipulation and embodied robot learning.</div>
   <a class="news-image" href="/research/" aria-label="Read more about dexterous manipulation research">
     <img class="news-thumb contain" src="/images/news-xiaomi-wuhan-talk-2026.svg" loading="lazy" alt="Talk at Xiaomi Wuhan headquarters on humanoid robot dexterous manipulation" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2026-10</span><strong>RGMP was featured by MIT Technology Review</strong> as a data-efficient framework for generalizable humanoid robot manipulation. In the AAAI 2026 evaluation, RGMP achieved <strong>87% task success</strong> in generalization tests while using about <strong>5× less training data</strong> than the compared state-of-the-art model. <a href="https://doi.org/10.1609/aaai.v40i18.38539">AAAI paper</a> · <a href="https://github.com/xtli12/RGMP">Project</a>.</div>
+  <div class="news-text"><span class="news-date">2026-10<span class="news-tag media">MEDIA</span></span><strong>RGMP was featured by MIT Technology Review</strong> as a data-efficient framework for generalizable humanoid robot manipulation. In the AAAI 2026 evaluation, RGMP achieved <strong>87% task success</strong> in generalization tests while using about <strong>5× less training data</strong> than the compared state-of-the-art model. <a href="https://doi.org/10.1609/aaai.v40i18.38539">AAAI paper</a> · <a href="https://github.com/xtli12/RGMP">Project</a>.</div>
   <a class="news-image" href="https://github.com/xtli12/RGMP" target="_blank" rel="noopener noreferrer" aria-label="Open RGMP project">
     <img class="news-thumb" src="https://raw.githubusercontent.com/xtli12/RGMP/main/figs/Generalization_grasping.gif" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/graspada.png'" alt="RGMP generalizable humanoid robot manipulation" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2026-09</span><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><strong>HandX tactile sensing gloves</strong></a> and their manufacturing/data-collection ecosystem were profiled by Wuhan's science and technology authorities. New preprints also include <a href="https://arxiv.org/abs/2609.07581">ICI-VLA</a> and work on VLA robustness. <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">Official website</a> · <a href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202609/t20260930_2855901.html">News</a>.</div>
+  <div class="news-text"><span class="news-date">2026-09<span class="news-tag product">PRODUCT</span></span><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><strong>HandX tactile sensing gloves</strong></a> and their manufacturing/data-collection ecosystem were profiled by Wuhan's science and technology authorities. New preprints also include <a href="https://arxiv.org/abs/2609.07581">ICI-VLA</a> and work on VLA robustness. <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">Official website</a> · <a href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202609/t20260930_2855901.html">News</a>.</div>
   <a class="news-image" href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202609/t20260930_2855901.html" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2026-09">
     <img class="news-thumb" src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250010.jpg" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-tactile-demo.svg'" alt="Thumbnail for 2026-09 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2026-08</span>Our Wuhan University team and AGIBOT won <strong>gold in the dexterous-hand powder-weighing event</strong> at the 2026 World Humanoid Robot Games; the robot autonomously weighed 20 g of salt in 27 seconds. <a href="https://news.whu.edu.cn/info/2301/501497.htm">University report</a>.</div>
+  <div class="news-text"><span class="news-date">2026-08<span class="news-tag award">AWARD</span></span>Our Wuhan University team and AGIBOT won <strong>gold in the dexterous-hand powder-weighing event</strong> at the 2026 World Humanoid Robot Games; the robot autonomously weighed 20 g of salt in 27 seconds. <a href="https://news.whu.edu.cn/info/2301/501497.htm">University report</a>.</div>
   <a class="news-image" href="https://news.whu.edu.cn/info/2301/501497.htm" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2026-08">
     <img class="news-thumb" src="https://news.whu.edu.cn/__local/6/15/D2/A034C36A17C8E1F457B0ED9FAD4_0084B72A_1FE0E.png" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Thumbnail for 2026-08 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2026-07</span><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">HandX</a> introduced its <strong>fabric tactile data glove</strong> for scalable embodied-intelligence data collection. The standard glove integrates <strong>45 high-precision tactile sensing points</strong> and can expand to <strong>800 sensing points</strong>. Tactile signals can be synchronized with head/wrist cameras and motion tracking to build multimodal demonstration datasets for robot learning, emphasizing fast deployment and real physical-interaction data. <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">Official website</a> · <a href="https://news.hubeidaily.net/pc/c_5814518.html">Product report</a>.</div>
+  <div class="news-text"><span class="news-date">2026-07<span class="news-tag product">PRODUCT</span></span><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">HandX</a> introduced its <strong>fabric tactile data glove</strong> for scalable embodied-intelligence data collection. The standard glove integrates <strong>45 high-precision tactile sensing points</strong> and can expand to <strong>800 sensing points</strong>. Tactile signals can be synchronized with head/wrist cameras and motion tracking to build multimodal demonstration datasets for robot learning, emphasizing fast deployment and real physical-interaction data. <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">Official website</a> · <a href="https://news.hubeidaily.net/pc/c_5814518.html">Product report</a>.</div>
   <a class="news-image" href="https://news.hubeidaily.net/pc/c_5814518.html" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2026-07">
     <img class="news-thumb" src="https://hbrbapp.hubeidaily.net/4b805789a3c14ffa828438c048d01bff.jpeg" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-tactile-demo.svg'" alt="HANDX tactile glove system presented at the Hubei embodied intelligence talent training base launch" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2026-06</span>Recent manipulation work includes <a href="https://arxiv.org/abs/2606.19914">Co-policy</a> and two <em>SCIENTIA SINICA Technologica</em> papers on <a href="https://doi.org/10.1360/SST-2025-0312">guided tactile humanoid manipulation</a> and <a href="https://doi.org/10.1360/SST-2025-0329">DexSo-UMI</a>.</div>
+  <div class="news-text"><span class="news-date">2026-06<span class="news-tag paper">PAPER</span></span>Recent manipulation work includes <a href="https://arxiv.org/abs/2606.19914">Co-policy</a> and two <em>SCIENTIA SINICA Technologica</em> papers on <a href="https://doi.org/10.1360/SST-2025-0312">guided tactile humanoid manipulation</a> and <a href="https://doi.org/10.1360/SST-2025-0329">DexSo-UMI</a>.</div>
   <a class="news-image" href="https://doi.org/10.1360/SST-2025-0312" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2026-06">
     <img class="news-thumb contain" src="https://raw.githubusercontent.com/xtli12/Co-policy/main/figs/Co-create/Semantic3x.gif" loading="lazy" referrerpolicy="no-referrer" alt="Thumbnail for 2026-06 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2026-04</span><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">HandX</a>'s <strong>robotic moxibustion</strong> entered a public demonstration and service setting in Wuhan's Optics Valley. <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">Official website</a> · <a href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202604/t20260409_2750862.html">Government report</a>.</div>
+  <div class="news-text"><span class="news-date">2026-04<span class="news-tag product">PRODUCT</span></span><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">HandX</a>'s <strong>robotic moxibustion</strong> entered a public demonstration and service setting in Wuhan's Optics Valley. <a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">Official website</a> · <a href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202604/t20260409_2750862.html">Government report</a>.</div>
   <a class="news-image" href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202604/t20260409_2750862.html" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2026-04">
     <img class="news-thumb" src="https://hbrbapp.hubeidaily.net/a377d82780fe4b32867695d041416955.jpg" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/posefusion.png'" alt="Thumbnail for 2026-04 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2026-03</span>Our paper <a href="https://doi.org/10.1609/aaai.v40i18.38539"><strong>RGMP: Recurrent Geometric-prior Multimodal Policy for Generalizable Humanoid Robot Manipulation</strong></a> was published at AAAI 2026.</div>
+  <div class="news-text"><span class="news-date">2026-03<span class="news-tag paper">PAPER</span></span>Our paper <a href="https://doi.org/10.1609/aaai.v40i18.38539"><strong>RGMP: Recurrent Geometric-prior Multimodal Policy for Generalizable Humanoid Robot Manipulation</strong></a> was published at AAAI 2026.</div>
   <a class="news-image" href="https://github.com/xtli12/RGMP" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2026-03">
     <img class="news-thumb" src="https://raw.githubusercontent.com/xtli12/RGMP/main/figs/Human-robot_interaction.gif" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/graspada.png'" alt="Thumbnail for 2026-03 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2026-02</span>The <strong>Yuanyou</strong> humanoid robot from the Tianwen project demonstrated brush calligraphy, reflecting the progression from handshake interaction toward coordinated tool manipulation and tactile-VLA research. <a href="https://news.hubeidaily.net/pc/c_5174051.html">Hubei Daily</a>.</div>
+  <div class="news-text"><span class="news-date">2026-02<span class="news-tag demo">DEMO</span></span>The <strong>Yuanyou</strong> humanoid robot from the Tianwen project demonstrated brush calligraphy, reflecting the progression from handshake interaction toward coordinated tool manipulation and tactile-VLA research. <a href="https://news.hubeidaily.net/pc/c_5174051.html">Hubei Daily</a>.</div>
   <a class="news-image" href="https://news.hubeidaily.net/pc/c_5174051.html" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2026-02">
     <img class="news-thumb" src="https://hbrbapp.hubeidaily.net/0941ea26238a4b49abefe60e3a5b4852.jpg" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Thumbnail for 2026-02 news" />
   </a>
@@ -207,43 +220,43 @@ I am teaching several courses for different schools including: Design and Manufa
 <details class="news-archive">
 <summary>2024–2025 news</summary>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2025-12</span>Wuhan University's School of Robotics inaugurated five industry-linked digital robotics teaching laboratories to strengthen practice-oriented robotics education. <a href="https://news.whu.edu.cn/info/1013/490457.htm">University report</a>.</div>
+  <div class="news-text"><span class="news-date">2025-12<span class="news-tag education">EDUCATION</span></span>Wuhan University's School of Robotics inaugurated five industry-linked digital robotics teaching laboratories to strengthen practice-oriented robotics education. <a href="https://news.whu.edu.cn/info/1013/490457.htm">University report</a>.</div>
   <a class="news-image" href="https://news.whu.edu.cn/info/1013/490457.htm" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2025-12">
     <img class="news-thumb" src="https://news.whu.edu.cn/__local/2/0F/C1/8C85466A7179B621033BDA72A77_BB6CD5B0_30EEF.jpg" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/word-cloud.png'" alt="Thumbnail for 2025-12 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2025-10</span>The <strong>Tianwen Humanoid Robot</strong> project won a gold award in the industrial category of the China International College Students' Innovation Competition. <a href="https://news.whu.edu.cn/info/1007/486627.htm">University report</a>.</div>
+  <div class="news-text"><span class="news-date">2025-10<span class="news-tag award">AWARD</span></span>The <strong>Tianwen Humanoid Robot</strong> project won a gold award in the industrial category of the China International College Students' Innovation Competition. <a href="https://news.whu.edu.cn/info/1007/486627.htm">University report</a>.</div>
   <a class="news-image" href="https://news.whu.edu.cn/info/1007/486627.htm" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2025-10">
     <img class="news-thumb" src="https://news.whu.edu.cn/__local/5/6D/E1/D4F319C448291702880166B9A30_3635B059_7DD2E.jpg" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Thumbnail for 2025-10 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2025-07</span>The <strong>HandX</strong> lightweight robotic hand, developed through a Wuhan University cross-disciplinary team with HandX Innovation participation, received the <strong>Red Dot Award: Product Design 2025</strong>. <a href="https://www.red-dot.org/zh/project/handx-82863">Red Dot page</a>.</div>
+  <div class="news-text"><span class="news-date">2025-07<span class="news-tag award">AWARD</span></span>The <strong>HandX</strong> lightweight robotic hand, developed through a Wuhan University cross-disciplinary team with HandX Innovation participation, received the <strong>Red Dot Award: Product Design 2025</strong>. <a href="https://www.red-dot.org/zh/project/handx-82863">Red Dot page</a>.</div>
   <a class="news-image" href="https://www.red-dot.org/zh/project/handx-82863" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2025-07">
     <img class="news-thumb" src="https://news.whu.edu.cn/__local/C/0B/0B/662B399D111B1946D50E73AA06A_A17BE2E6_4B58C.jpg" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Thumbnail for 2025-07 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2025-07</span>The <strong>School of Robotics at Wuhan University</strong> was formally inaugurated, integrating research, education and industry collaboration. <a href="https://news.whu.edu.cn/info/1002/483017.htm">University report</a>.</div>
+  <div class="news-text"><span class="news-date">2025-07<span class="news-tag education">EDUCATION</span></span>The <strong>School of Robotics at Wuhan University</strong> was formally inaugurated, integrating research, education and industry collaboration. <a href="https://news.whu.edu.cn/info/1002/483017.htm">University report</a>.</div>
   <a class="news-image" href="https://news.whu.edu.cn/info/1002/483017.htm" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2025-07">
     <img class="news-thumb" src="https://news.whu.edu.cn/__local/7/2B/6A/2BD4C454983D570B08492F58FE6_A1A3B280_BA1E0.jpg" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/word-cloud.png'" alt="Thumbnail for 2025-07 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2025-02</span>The team's <strong>Tianwen humanoid robot</strong> was publicly demonstrated in Wuhan, including handshaking, tool handling and interactive behaviors. <a href="https://www.wuhan.gov.cn/sy/whyw/202502/t20250209_2530626.shtml">Wuhan government report</a>.</div>
+  <div class="news-text"><span class="news-date">2025-02<span class="news-tag demo">DEMO</span></span>The team's <strong>Tianwen humanoid robot</strong> was publicly demonstrated in Wuhan, including handshaking, tool handling and interactive behaviors. <a href="https://www.wuhan.gov.cn/sy/whyw/202502/t20250209_2530626.shtml">Wuhan government report</a>.</div>
   <a class="news-image" href="https://www.wuhan.gov.cn/sy/whyw/202502/t20250209_2530626.shtml" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2025-02">
     <img class="news-thumb" src="https://www.wuhan.gov.cn/sy/whyw/202502/W020250209563670173443.jpeg" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/softhand.png'" alt="Thumbnail for 2025-02 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2024-07</span>I founded <strong><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">HandX Innovation</a></strong> to translate research in robotic grasping and manipulation into tactile sensing, dexterous learning and real-world robotic products.</div>
+  <div class="news-text"><span class="news-date">2024-07<span class="news-tag startup">STARTUP</span></span>I founded <strong><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer">HandX Innovation</a></strong> to translate research in robotic grasping and manipulation into tactile sensing, dexterous learning and real-world robotic products.</div>
   <a class="news-image" href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202604/t20260409_2750862.html" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2024-07">
     <img class="news-thumb contain" src="https://img.jiemian.com/101/original/20260729/import_1785313150454120250013.jpg" loading="lazy" referrerpolicy="no-referrer" alt="Thumbnail for 2024-07 news" />
   </a>
 </div>
 <div class="news-row">
-  <div class="news-text"><span class="news-date">2024-02</span>Our work <em>Design and Fabrication of a Novel Miniature Magnetic Gripper</em> was accepted to ICRA 2024. <a href="https://doi.org/10.1109/ICRA57147.2024.10611688">Paper</a>.</div>
+  <div class="news-text"><span class="news-date">2024-02<span class="news-tag paper">PAPER</span></span>Our work <em>Design and Fabrication of a Novel Miniature Magnetic Gripper</em> was accepted to ICRA 2024. <a href="https://doi.org/10.1109/ICRA57147.2024.10611688">Paper</a>.</div>
   <a class="news-image" href="https://doi.org/10.1109/ICRA57147.2024.10611688" target="_blank" rel="noopener noreferrer" aria-label="Open source for 2024-02">
     <img class="news-thumb contain" src="/images/news-magnetic-gripper.svg" loading="lazy" referrerpolicy="no-referrer" alt="Thumbnail for 2024-02 news" />
   </a>
@@ -251,63 +264,63 @@ I am teaching several courses for different schools including: Design and Manufa
 </details>
 <details class="news-archive news-legacy">
 <summary>Older news archive (2016–2024)</summary>
-<p style="text-align:justify;"><strong>2024-01</strong> <br />
+<p style="text-align:justify;"><strong>2024-01</strong><span class="news-tag workshop">WORKSHOP</span><br />
 Two of our workshops have been accepted by ICRA 2024.
 
-<p style="text-align:justify;"><strong>2023-10</strong> <br />
+<p style="text-align:justify;"><strong>2023-10</strong><span class="news-tag talk">TALK</span><br />
 I was invited to give a talk at IROS workshop of Robotics and AI for future factory (<a href="/publications/pdf/Miao_Talk_WS_1001_pdf.pdf">Robust Robotic Grasping-From Hundreds to Millions</a>)
-<p style="text-align:justify;"><strong>2023-09</strong> <br />
+<p style="text-align:justify;"><strong>2023-09</strong><span class="news-tag talk">TALK</span><br />
 I was invited to give a talk at 2023 Intel China Academic Excellence Program (Deep Imitation Learning for Robotic Grasping)
 
-<p style="text-align:justify;"><strong>2023-09</strong> <br />
+<p style="text-align:justify;"><strong>2023-09</strong><span class="news-tag submission">SUBMISSION</span><br />
 We have submitted three papers and two workshop proposals to ICRA 2024
 
-<p style="text-align:justify;"><strong>2023-09</strong> <br />
+<p style="text-align:justify;"><strong>2023-09</strong><span class="news-tag service">SERVICE</span><br />
 I am severed as an AE for ICRA 2014
 
-<p style="text-align:justify;"><strong>2023-09</strong> <br />
+<p style="text-align:justify;"><strong>2023-09</strong><span class="news-tag education">TEACHING</span><br />
 This new semester I will teach a new course on robotics for HongYi Honor College  
 
-<p style="text-align:justify;"><strong>2022-09</strong> <br />
+<p style="text-align:justify;"><strong>2022-09</strong><span class="news-tag submission">SUBMISSION</span><br />
 We have submitted three papers to ICRA 2023
-<p style="text-align:justify;"><strong>2022-09</strong> <br />
+<p style="text-align:justify;"><strong>2022-09</strong><span class="news-tag award">AWARD</span><br />
 Our paper "Robot Learning to Search Objects in Cluttered Environments Using Maximum Information-based Method" has been nominated as the Finalist of Best Paper Award in IEEE CYBER 2022.
-<p style="text-align:justify;"><strong>2022-09</strong> <br />
+<p style="text-align:justify;"><strong>2022-09</strong><span class="news-tag paper">PAPER</span><br />
 Our paper "A biomimetic tactile palm for robotic object manipulation" has been accepted by RAL.
 
-<p style="text-align:justify;"><strong>2021-08</strong> <br />
+<p style="text-align:justify;"><strong>2021-08</strong><span class="news-tag award">AWARD</span><br />
 Our paper "Learning Robotic Ultrasound Scanning Skills via Human Demonstrations and Guided Explorations" has been nominated as the Finalist of T.J. Tarn Best Paper Award in ROBIO 2021.
 
-<p style="text-align:justify;"><strong>2021-08</strong> <br />
+<p style="text-align:justify;"><strong>2021-08</strong><span class="news-tag education">EDUCATION</span><br />
 I am happy to be selected as the Academia Supervisor of HongYi Honor College of Wuhan University, China
 
-<p style="text-align:justify;"><strong>2020-10</strong> <br />
+<p style="text-align:justify;"><strong>2020-10</strong><span class="news-tag award">AWARD</span><br />
 I am awarded with the Innovation and Entrepreneurship Talents Award, China.(10 persons per year in China)
 
-<p style="text-align:justify;"><strong>2020-08</strong> <br />
+<p style="text-align:justify;"><strong>2020-08</strong><span class="news-tag award">AWARD</span><br />
 Our work on the robotic ultrasound system has won the second prize in Robot Innovation Design Competition for Chinese Graduate.
 
-<p style="text-align:justify;"><strong>2019-05</strong> <br />
+<p style="text-align:justify;"><strong>2019-05</strong><span class="news-tag award">AWARD</span><br />
 I am awarded with the Hubei May 1st labor medal, Hubei Province.
 
-<p style="text-align:justify;"><strong>2018-10</strong> <br />
+<p style="text-align:justify;"><strong>2018-10</strong><span class="news-tag award">AWARD</span><br />
 We just won the Best Paper Award in The 11th International Workshop on Human-Friendly Robotics.
 
-<p style="text-align:justify;"><strong>2018-04</strong> <br />
+<p style="text-align:justify;"><strong>2018-04</strong><span class="news-tag workshop">WORKSHOP</span><br />
 Our workshop submitted to IROS 2018 has been accepted from 84 proposals. Examining Sensing Modalities for Robust and Dexterous Object Manipulation, organized by Kaiyu Hang, Hao Ding, Miao Li, Danica Kragic and Aaron Dollar.
-<p><strong>2018-02</strong> <br />
+<p><strong>2018-02</strong><span class="news-tag submission">SUBMISSION</span><br />
 Our paper on 'learning force-based skills from human demonstration' was submitted to IROS 2018.
-<p><strong>2017-05</strong> <br />
+<p><strong>2017-05</strong><span class="news-tag service">SERVICE</span><br />
 I will serve as a Guest Editor for Special Issue on Robotics &amp; Automation Magazine, 2017 - Human-robot collaboration for production environments.
-<p><strong>2017-02</strong> <br />
+<p><strong>2017-02</strong><span class="news-tag workshop">WORKSHOP</span><br />
 Our workshop proposal Sensor-Based Object Manipulation for Collaborative Assembly at ICRA (Singapore, 2017) has been accepted!
-<p><strong>2017-01</strong> <br />
+<p><strong>2017-01</strong><span class="news-tag service">VISIT</span><br />
  Visiting Researcher at Human-Centered Robotics Laboratory (Prof. Kenji Tahara), Kyushu University, Japan
 
-<p><strong>2016-12</strong> <br />
+<p><strong>2016-12</strong><span class="news-tag education">POSITION</span><br />
 I started as an associate professor at Wuhan University, working on Learning Algorithms for Soft Manipulations.</p>
 
-<p style="text-align:justify;"><strong>2016-07</strong> <br />
+<p style="text-align:justify;"><strong>2016-07</strong><span class="news-tag startup">STARTUP</span><br />
 I started as a founder of a startup based in China-<a href="http://www.cobotsys.com/">COBOT Technology</a>, working on intelligent operation system for industrial robots.</p>
 
 </details>
