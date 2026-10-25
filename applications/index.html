@@ -283,11 +283,73 @@
   <figure class="app-photo-card"><a href="https://www.handx.cloud/" target="_blank" rel="noopener noreferrer"><img src="https://hbrbapp.hubeidaily.net/b62fffb9500f49f5aff8542c30cc6f60.jpg" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/images/handx-moxibustion-demo.svg'" alt="Humanoid robot guiding a customer in the moxibustion experience store" /></a><figcaption>Humanoid service robot guiding a customer in the experience-store workflow.</figcaption></figure>
 </div>
 
+<h2 id="autonomous-ultrasound">Autonomous Robotic Ultrasound</h2>
+<p style="text-align:justify;">
+  Autonomous robotic ultrasound has been a long-running research and translation direction in our work: the core question is how a robot can acquire the scanning skills of an experienced sonographer and then adapt them safely across patients. Our research combines <strong>ultrasound image perception</strong>, <strong>probe pose/orientation</strong>, <strong>contact force</strong>, imitation learning and online skill adaptation so that scanning can move from teleoperation toward increasingly autonomous execution.
+</p>
+
+<div class="app-specs">
+<ul>
+  <li><strong>Learning from sonographers:</strong> multimodal demonstrations combine ultrasound images, probe motion and contact force.</li>
+  <li><strong>Autonomous skill execution:</strong> learned scanning policies predict probe motion and force while searching for clinically useful views.</li>
+  <li><strong>Adaptation across patients:</strong> online optimization and guided exploration compensate for anatomical and contact-condition differences.</li>
+  <li><strong>Image–motion–force closed loop:</strong> visual feedback and force control are integrated rather than treating ultrasound as a purely kinematic task.</li>
+</ul>
+</div>
+
+<div class="app-photo-grid three">
+  <figure class="app-photo-card">
+    <a href="/research/#robotic-ultrasound">
+      <img src="/images/autonomous-ultrasound.png" alt="Autonomous robotic ultrasound research workflow" />
+    </a>
+    <figcaption><strong>Research framework.</strong> Learning multimodal ultrasound scanning skills from clinical demonstrations for autonomous execution.</figcaption>
+  </figure>
+  <figure class="app-photo-card">
+    <a href="https://www.cobotsys.com/h-col-124.html" target="_blank" rel="noopener noreferrer">
+      <img src="https://hbrbapp.hubeidaily.net/5e5eae2e-7574-46ef-9a25-8b27feb9eb61"
+           referrerpolicy="no-referrer"
+           onerror="this.onerror=null;this.src='/images/autonomous-ultrasound.png'"
+           alt="COBOT autonomous ultrasound robot in testing" />
+    </a>
+    <figcaption><strong>COBOT autonomous ultrasound robot.</strong> A patient-side robot performs ultrasound scanning while the system analyzes images and adjusts probe interaction.</figcaption>
+  </figure>
+  <figure class="app-photo-card">
+    <a href="https://www.cobotsys.com/h-col-124.html" target="_blank" rel="noopener noreferrer">
+      <img src="https://news.cjn.cn/csqpd/lbt_19995/202409/W020240927301225066620.jpeg"
+           referrerpolicy="no-referrer"
+           onerror="this.onerror=null;this.src='/images/autonomous-ultrasound.png'"
+           alt="COBOT ultrasound robot performing autonomous thyroid scanning" />
+    </a>
+    <figcaption><strong>Industrial deployment.</strong> COBOT's autonomous ultrasound platform applies robotic scanning to standardized examinations and clinical workflows.</figcaption>
+  </figure>
+</div>
+
+<h3 style="margin-top:10px;">Representative Publications</h3>
+<div class="app-specs">
+<ul>
+  <li><strong>Learning Freehand Ultrasound Through Multimodal Representation and Skill Adaptation</strong> — <em>IEEE T-ASE</em>, 2025, 22: 5117–5130.</li>
+  <li><a href="https://doi.org/10.1109/ROBIO54168.2021.9739464" target="_blank" rel="noopener noreferrer"><strong>Learning Robotic Ultrasound Scanning Skills via Human Demonstrations and Guided Explorations</strong></a> — <em>ROBIO</em>, 2021, 372–378; T.J. Tarn Best Paper Award Finalist.</li>
+  <li><strong>Learning Ultrasound Scanning Skills from Human Demonstrations</strong> — <em>Science China Information Sciences</em>, 2021.</li>
+  <li><strong>Learning to Predict Action Based on B-ultrasound Image Information</strong> — <em>ICARM</em>, 2021.</li>
+  <li><a href="https://doi.org/10.5772/intechopen.105069" target="_blank" rel="noopener noreferrer"><strong>Learning Robotic Ultrasound Skills from Human Demonstrations</strong></a> — book chapter, 2022.</li>
+  <li><strong>Recent advances in robot-assisted echography: combining perception, control and cognition</strong> — <em>Cognitive Computation and Systems</em>, 2020, 2(3): 85–92.</li>
+</ul>
+</div>
+
+<h3>Translation at COBOT Technology</h3>
+<p style="text-align:justify;">
+  The academic work on robotic ultrasound also connects to industrial deployment at <a href="https://www.cobotsys.com/" target="_blank" rel="noopener noreferrer"><strong>COBOT Technology</strong></a>. COBOT's autonomous ultrasound robot uses real-time ultrasound-image perception and robotic servo control to adjust probe pose and contact force, emulate sonographer scanning maneuvers, automatically tune ultrasound parameters, select standard views, perform measurements and generate structured scanning records. COBOT's public company history states that its intelligent ultrasound robot obtained an <strong>NMPA Class III medical-device registration certificate in 2022</strong>. The product family has since expanded to autonomous, remote and breast-ultrasound robotic systems.
+  <a href="https://www.cobotsys.com/h-col-124.html" target="_blank" rel="noopener noreferrer">[Autonomous ultrasound robot]</a>
+  <a href="https://www.cobotsys.com/h-col-126.html" target="_blank" rel="noopener noreferrer">[Remote ultrasound robot]</a>
+  <a href="https://www.cobotsys.com/h-col-127.html" target="_blank" rel="noopener noreferrer">[Breast ultrasound robot]</a>
+</p>
+
+<hr style="clear:both;" />
 <h3>Other Application Directions</h3>
 <ul>
 <li><strong>Industrial grasping and manufacturing.</strong> Vision-guided picking, robust grasping, compliant manipulation, machine-vision inspection and robotized composite manufacturing.</li>
 <li><strong>AI for Science.</strong> Embodied manipulation for scientific experiments, especially repeatable wet-lab operations and multimodal scientific-operation data collection.</li>
-<li><strong>Medical and physical-interaction robotics.</strong> Earlier research includes robotic ultrasound and compliant physical interaction.</li>
+<li><strong>Medical and physical-interaction robotics.</strong> Other work includes compliant physical interaction and medical robotic manipulation beyond ultrasound.</li>
 </ul>
 <p style="text-align:justify;">Earlier application demonstrations remain below as an archive of the progression from industrial grasping to today's embodied-intelligence systems.</p>
 <hr style="clear:both;" />
