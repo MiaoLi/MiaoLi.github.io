@@ -209,6 +209,70 @@
 .rep-papers .venue{white-space:nowrap;color:#8a5a2b;font-weight:700;}
 </style>
 
+<h2 id="hand-design"><strong>Hand Design</strong></h2>
+<p style="text-align:justify;">
+  Our work on <strong>robotic hand design</strong> explores how mechanical intelligence, compliant morphology, sensing and task requirements can be co-designed rather than treated separately. The research spans task-oriented soft-finger optimization, variable-stiffness actuators, anthropomorphic tendon-driven soft hands, tactile palms and skin-inspired sensors, miniature magnetic grippers, and translation toward lightweight dexterous hands for real-world robots.
+</p>
+
+<div class="app-specs" style="background:#f8fbfc;border-left:3px solid #5b8fa8;padding:10px 14px;margin:12px 0 18px;">
+<ul>
+  <li><strong>Task-oriented morphology:</strong> learn finger geometry and compliance from grasp-quality requirements instead of designing the mechanism first and adapting control later.</li>
+  <li><strong>Soft and variable-stiffness hands:</strong> exploit compliant structures, tendon actuation and bidirectional stiffening to increase robustness while keeping control complexity manageable.</li>
+  <li><strong>Tactile-integrated hand design:</strong> integrate sensing into fingertips and palms so contact state becomes part of the hand architecture itself.</li>
+  <li><strong>Miniaturized end effectors:</strong> develop small-scale magnetic grippers for constrained manipulation and minimally invasive scenarios.</li>
+  <li><strong>Product translation:</strong> extend these principles into lightweight dexterous hands such as <a href="https://www.red-dot.org/project/handx-82863" target="_blank" rel="noopener noreferrer">HandX</a>, which received the Red Dot Award: Product Design 2025.</li>
+</ul>
+</div>
+
+<div class="research-gallery">
+  <figure>
+    <a href="https://doi.org/10.3389/frobt.2020.590076" target="_blank" rel="noopener noreferrer">
+      <img src="/images/softhand.png" loading="lazy" alt="Soft robotic hand and Fin-Ray finger design research" />
+    </a>
+    <figcaption><strong>Task-driven soft hand design.</strong> Fin-Ray finger geometry and compliant morphology optimized for grasping performance.</figcaption>
+  </figure>
+  <figure>
+    <a href="https://doi.org/10.1109/LRA.2022.3202653" target="_blank" rel="noopener noreferrer">
+      <img src="/images/tactilepalm.png" loading="lazy" alt="Biomimetic tactile palm for robotic manipulation" />
+    </a>
+    <figcaption><strong>Tactile-integrated hand.</strong> Biomimetic palm sensing for contact-state estimation during grasping and manipulation.</figcaption>
+  </figure>
+  <figure>
+    <a href="https://doi.org/10.1109/ICRA57147.2024.10611688" target="_blank" rel="noopener noreferrer">
+      <img src="/images/news-magnetic-gripper.svg" loading="lazy" alt="Miniature magnetic gripper for small-scale robotic manipulation" />
+    </a>
+    <figcaption><strong>Miniature magnetic gripper.</strong> Small-scale four-finger gripper for manipulation in constrained spaces.</figcaption>
+  </figure>
+  <figure>
+    <a href="https://www.red-dot.org/project/handx-82863" target="_blank" rel="noopener noreferrer">
+      <img src="https://news.whu.edu.cn/__local/C/0B/0B/662B399D111B1946D50E73AA06A_A17BE2E6_4B58C.jpg"
+           loading="lazy"
+           referrerpolicy="no-referrer"
+           onerror="this.onerror=null;this.src='/images/softhand.png'"
+           alt="HandX lightweight robotic hand" />
+    </a>
+    <figcaption><strong>HandX lightweight robotic hand.</strong> Cable-driven TPU fingers with visual and tactile sensing, translated from research toward deployable robotic systems.</figcaption>
+  </figure>
+</div>
+
+<div class="rep-papers"><strong>Representative papers and projects:</strong><br />
+<a href="https://doi.org/10.1088/1361-665X/ae2705">A compliant, underactuated soft hand inspired by mechanical metamaterials</a> — <span class="venue">Smart Mater. Struct. 2025</span>;<br />
+<a href="https://doi.org/10.1109/JSEN.2025.3532463">Design and Fabrication of a Piezoresistive Tactile Sensor Inspired by Human Skin Microstructure for Robotic Manipulation</a> — <span class="venue">IEEE Sens. J. 2025</span>;<br />
+<a href="https://doi.org/10.1089/soro.2022.0212">Bioinspired Bidirectional Stiffening Soft Actuators Enable Versatile and Robust Grasping</a> — <span class="venue">Soft Robot. 2024</span>;<br />
+<a href="https://doi.org/10.1109/ICRA57147.2024.10611688">Design and Fabrication of a Novel Miniature Magnetic Gripper</a> — <span class="venue">ICRA 2024</span>, 1964–1970;<br />
+<a href="https://arxiv.org/abs/2308.05386">A Novel Tactile Palm for Robotic Object Manipulation</a> — <span class="venue">ICIRA 2023</span>, 81–92;<br />
+<a href="https://doi.org/10.1109/LRA.2022.3202653">A Biomimetic Tactile Palm for Robotic Object Manipulation</a> — <span class="venue">RA-L 2022</span>, 7(4):11500–11507;<br />
+<a href="https://doi.org/10.3389/frobt.2020.590076">Learning Optimal Fin-Ray Finger Design for Soft Grasping</a> — <span class="venue">Front. Robot. AI 2021</span>, 7:590076;<br />
+<strong>A Tendon-Driven Soft Hand for Dexterous Manipulation</strong> — ongoing hand-design project integrating flexible microstructure fingers, synergy actuation and fingertip/palm tactile sensing;<br />
+<a href="https://www.red-dot.org/project/handx-82863">HandX lightweight robotic hand</a> — <span class="venue">Red Dot Award: Product Design 2025</span>.
+</div>
+
+<p style="text-align:justify;">
+  Across these projects, the design philosophy is consistent: <strong>use morphology and sensing to absorb part of the manipulation complexity before it reaches the controller</strong>. This creates a continuum from mechanical design to tactile perception, grasp adaptation and dexterous skill learning, and connects directly to our broader research on robust grasping and embodied manipulation.
+</p>
+
+<hr style="clear:both;" />
+
 <h2 id="vla-research"><strong>Vision-Language-Action (VLA) Models and Embodied Robot Learning</strong></h2>
 <p style="text-align:justify;">A major focus of our recent work is bridging high-level visual-language understanding with robust, data-efficient robot actions. In <strong>RGMP</strong> (AAAI 2026), a geometric-prior skill selector connects natural-language commands, object shape and spatial relations to executable grasping skills, while an adaptive recursive policy learns robot motion from limited demonstrations. We are extending this direction toward multimodal VLA learning, in-context imitation, human–robot co-creation and robustness of robotic foundation policies. <a href="https://doi.org/10.1609/aaai.v40i18.38539">[AAAI 2026 paper]</a> <a href="https://arxiv.org/abs/2609.07581">[ICI-VLA]</a> <a href="https://github.com/xtli12/RGMP">[RGMP project]</a></p>
 <div class="rep-papers"><strong>Representative papers:</strong>
